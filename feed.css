@@ -98,7 +98,7 @@ html, body {
             input[type=text],
             input[type=password] {
                 padding: 10px 10px;
-                border: solid 1px #fff;
+                border: none;
                 margin: 10px 0;
                 width: calc(90% - 22px);
                 text-align: center;
@@ -143,3 +143,5 @@ html, body {
             button[type=submit]:hover {
                 width: 100%;
             }
+
+    
