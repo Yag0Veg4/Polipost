@@ -46,7 +46,7 @@ header{
 
 main{
     width:100%;
-    height:auto%;
+    height:auto;
     float: left;
     background-color: rgb(10, 10, 10);
 }
@@ -95,7 +95,7 @@ main{
 
 #ar7{
     width: 33%;
-    height: auto%;
+    height: auto;
     float: left;
     background-color: rgb(228, 45, 13);
 }
