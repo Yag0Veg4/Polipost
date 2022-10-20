@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="registro-user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="logo">
+            <ul>
+                <li><a href="#"><img src="../images/logo.png" alt=""></a></li>
+                <li>P</li>
+                <li>O</li>
+                <li>L</li>
+                <li>I</li>
+                <li>P</li>
+                <li>O</li>
+                <li>S</li>
+                <li>T</li>
+            </ul>
+        </section>
+        <nav id="n1">
+            <a href="in-sesion.html">Regresar al inicio</a>
+        </nav>
+    </header>
+    <main>
+        <section id="glass">
+            <section id="tit">
+                <h1>Registrarse</h1>
+            </section>
+            <section id="f-registro">
+                <form id="form1" method="post" action="registro1.php">
+                    <label id="N">NOMBRE</label><br>
+                    <input type="text" placeholder="NOMBRE(S)" name="NOMBRE" id="NI" required>
+                    <label id="APE">APELLIDO</label><br>
+                    <input type="text" placeholder="APELLIDO(S)" name="APELLIDO" id="AI" required><br><br>
+                    <label id="CL">CODIGO DE ESTUDIANTE</label><br>
+                    <input type="text" placeholder="CODIGO" name="CODIGO" id="CI" required><br><br>
+                    <label id="TL">TELEFONO (OPCIONAL)</label><br>
+                    <input type="tel" name="TELEFONO" id="TI" placeholder="TELEFONO"><br><br>
+                    <label id="COL">CORREO ELECTRONICO</label><br>
+                    <input type="email" name="CORREO" id="COI" placeholder="CORREO" required><br><br>
+                    <label id="CON">CONTRASEÑA</label><br>
+                    <input type="password" name="CONTRA" id="CONI" placeholder="CONTRASEÑA" required>
+                    <input type="submit" id="sub" value="Registrarse">
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

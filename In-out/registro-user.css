@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 85%;
+    float: left;
+    background-image: url(../images/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Sen';
+}
+
+    header {
+        width: 100%;
+        height: 15%;
+        background-color: #191919;
+        display: grid;
+        grid-template-columns: 85% 15%;
+        grid-area: center;
+        align-content: center;
+    }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            font-family: 'Lato';
+        }
+            ul li {
+                width: 40px;
+                height: 40px;
+                background-color: #4C3575;
+                color: white;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s easy-in-out;
+            }
+                ul li img {
+                    width: 40px;
+                }
+
+                ul li:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                ul li:last-child {
+                    border-radius: 0 5px 5px 0;
+                }
+
+                    ul:hover li:nth-child(odd) {
+                        transform: skewY(15deg);
+                    }
+
+                    ul:hover li:nth-child(even) {
+                        transform: skewY(-15deg);
+                    }
+
+    #n1 {
+        color: white;
+    }
+
+    #tit {
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+    }
+
+main {
+    padding: 20px;
+}
+    
+    #glass {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+        color: white;
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 15% 85%;
+        padding: 20px 20px;
+    }
+
+        #f-registro {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            width: 350px;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px 10px;
+            border: none;
+            margin: 10px 0;
+            width: calc(70% - 22px);
+            text-align: center;
+            font-size: 12px;
+            background-color: #0F4C75;
+            border-radius: 2px;
+            color: #292929;
+            transition: 0.3s all ease-in-out;
+        }
+
+            input::placeholder {
+                color: #fff;
+                transition: 0.3s all ease-in-out;
+            }
+
+                input:focus::placeholder {
+                    color: #393939;
+                }
+
+                input:focus,
+                input:not(:placeholder-shown) {
+                    width: calc(80% - 22px);
+                    background-color: rgba(255,255,255,0.9);
+                }
+
+        input[type=submit] {
+            font-size: 25px;
+            width: 150px;
+            height: auto;
+            background-color: #242F9B;
+            display: block;
+            margin: auto;
+            border: none;
+            border-radius: 12px;
+            color: white;
+
+        }
+            #sub:hover {
+                background-color: #646FD4;
+            }
+
+    footer {
+        width: 100%;
+        height: 15%;
+    }
+
