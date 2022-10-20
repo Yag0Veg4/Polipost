@@ -24,7 +24,7 @@ body {
     header {
         width: 100%;
         height: 15%;
-        background-color: #191919;
+        background-color: #202040;
         display: grid;
         grid-template-columns: 85% 15%;
         grid-area: center;
@@ -69,9 +69,12 @@ body {
                         transform: skewY(-15deg);
                     }
 
-    #n1 {
+    #n1 a {
         color: white;
     }
+        #n1 a:hover {
+            color: cyan;
+        }
 
     #tit {
         text-align: center;
@@ -162,6 +165,62 @@ main {
 
     footer {
         width: 100%;
-        height: 15%;
+        height: 45%;
+        background-color: #202040;
+        color: white;
+        display: grid;
+        grid-template-rows: 90% 10%;   
     }
+        #us {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            padding: 25px;
+        }
+
+            #descripcion {
+                display: grid;
+                align-content:space-around;
+            }
+
+                #descripcion h4 {
+                    font-size: 22px;
+                }
+
+            #soporte {
+                display: grid;
+            }
+                #soporte a {
+                    color: white;
+                }
+                    #soporte a:hover {
+                        color: #363636;
+                    }
+
+                #soporte h4 {
+                    font-size: 22px;
+                }    
+            
+            #contactos h4 {
+                font-size: 22px;
+            }
+
+                #social a {
+                    color: white;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    font-size: 15px;
+                    grid-template-columns: 5% 95%;
+                }
+
+                    #social a:hover,
+                    #social i:hover {
+                        color: #363636;
+                    }
+
+        #pp-team {
+            padding: 0 20px;
+            background-color: #000;
+            text-align: center;
+        }
 
