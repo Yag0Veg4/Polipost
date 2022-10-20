@@ -4,7 +4,7 @@
 
     //CONDICION DE NO ACCESO SI NO SESION INICIADA
     if(!isset($_SESSION['loggedin'])) {
-        header('location: index.html');
+        header('location: in-sesion.html');
 
     }
 ?>

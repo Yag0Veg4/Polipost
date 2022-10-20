@@ -8,5 +8,5 @@
     //DESTRUIR SESION 
     session_destroy();
 
-    header('location: index.html');
+    header('location: in-sesion.html');
 ?>
