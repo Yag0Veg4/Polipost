@@ -24,7 +24,7 @@ body {
     header {
         width: 100%;
         height: 15%;
-        background-color: #191919;
+        background-color: #202040;
         display: grid;
         grid-template-columns: 85% 15%;
         grid-area: center;
@@ -69,99 +69,154 @@ body {
                         transform: skewY(-15deg);
                     }
 
-    #n1 {
+    #n1 a {
         color: white;
     }
+        #n1 a:hover {
+            color: cyan;
+        }
 
-    #tit {
-        text-align: center;
-        font-size: 35px;
+    main {
         padding: 20px;
     }
-
-main {
-    padding: 20px;
-}
-    
-    #glass {
-        width: 60%;
-        height: auto;
-        display: block;
-        margin: auto;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 32px;
-        color: white;
-        font-size: 15px;
-        display: grid;
-        grid-template-rows: 15% 85%;
-        padding: 20px 20px;
-    }
-
-        #f-registro {
-            display: flex;
-            justify-content: center;
+        
+        #glass {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: auto;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 32px;
+            color: white;
+            font-size: 15px;
+            display: grid;
+            grid-template-rows: 15% 85%;
+            padding: 20px 20px;
         }
+            #tit {
+                text-align: center;
+                font-size: 35px;
+                padding: 20px;
+            }
 
-        form {
-            width: 350px;
-            position: relative;
-            z-index: 10;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+            #f-registro {
+                display: flex;
+                justify-content: center;
+            }
 
-        input {
-            padding: 10px 10px;
-            border: none;
-            margin: 10px 0;
-            width: calc(70% - 22px);
-            text-align: center;
-            font-size: 12px;
-            background-color: #0F4C75;
-            border-radius: 2px;
-            color: #292929;
-            transition: 0.3s all ease-in-out;
-        }
+            form {
+                width: 350px;
+                position: relative;
+                z-index: 10;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-            input::placeholder {
-                color: #fff;
+            input {
+                padding: 10px 10px;
+                border: none;
+                margin: 10px 0;
+                width: calc(70% - 22px);
+                text-align: center;
+                font-size: 12px;
+                font-family: 'Sen';
+                background-color: #0F4C75;
+                border-radius: 2px;
+                color: #292929;
                 transition: 0.3s all ease-in-out;
             }
 
-                input:focus::placeholder {
-                    color: #393939;
+                input::placeholder {
+                    color: #fff;
+                    transition: 0.3s all ease-in-out;
                 }
 
-                input:focus,
-                input:not(:placeholder-shown) {
-                    width: calc(80% - 22px);
-                    background-color: rgba(255,255,255,0.9);
-                }
+                    input:focus::placeholder {
+                        color: #393939;
+                    }
 
-        input[type=submit] {
-            font-size: 25px;
-            width: 150px;
-            height: auto;
-            background-color: #242F9B;
-            display: block;
-            margin: auto;
-            border: none;
-            border-radius: 12px;
-            color: white;
+                    input:focus,
+                    input:not(:placeholder-shown) {
+                        width: calc(80% - 22px);
+                        background-color: rgba(255,255,255,0.9);
+                    }
 
-        }
-            #sub:hover {
-                background-color: #646FD4;
+            input[type=submit] {
+                font-size: 25px;
+                width: 190px;
+                height: auto;
+                background-color: #242F9B;
+                display: block;
+                margin: auto;
+                border: none;
+                border-radius: 12px;
+                color: white;   
             }
+                #sub:hover {
+                    background-color: #646FD4;
+                }
 
     footer {
         width: 100%;
-        height: 15%;
+        height: 45%;
+        background-color: #202040;
+        color: white;
+        display: grid;
+        grid-template-rows: 90% 10%;   
     }
+        #us {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            padding: 25px;
+        }
+
+        #desc {
+            display: grid;
+            grid-template-rows: 20% 80%;
+        }
+
+            #desc-tit {
+                font-size: 22px;
+            }
+
+            #sop-tit {
+                font-size: 22px;
+            }
+
+            #sop-p {
+                color: white;
+            }    
+            
+            #contactos h4 {
+                font-size: 22px;
+            }
+
+                #social a {
+                    color: white;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    font-size: 15px;
+                    grid-template-columns: 5% 95%;
+                }
+
+                    #social a:hover,
+                    #social i:hover {
+                        color: #363636;
+                    }
+
+                    #pp-team {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #000;
+                        text-align: center;
+                        display: grid;
+                        align-content: center;
+                    }
 
