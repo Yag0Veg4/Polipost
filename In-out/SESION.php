@@ -22,7 +22,7 @@ if(password_verify($CONTRAE,$hash)){
     session_regenerate_id();
     $_SESSION['login']=TRUE;
     $_SESSION['name']=$CODIGOE;
-    header('location: perfil.php');
+    header('location: feedpolipost.php');
     echo mysqli_error($con);
 } else{
     echo ('Todo Mal');

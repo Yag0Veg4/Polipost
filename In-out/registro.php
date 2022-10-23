@@ -16,8 +16,7 @@
     $paquete = mysqli_query($con,$sql);
 
     if(!$paquete){
-        echo'no jalo';
-        echo mysqli_error($con);
+        echo'no jalo';                
     }else{
         echo'si jalo';
     }
