@@ -25,7 +25,8 @@ if(password_verify($CONTRAE,$hash)){
     header('location: feedpolipost.php');
     echo mysqli_error($con);
 } else{
-    echo ('Todo Mal');
+    echo ('Todo Mal');       
+    echo '<script>alert("Usurio o contraseña mal ingresados ingresa de nuevo por favor")</script>';
 
 }
 ?>

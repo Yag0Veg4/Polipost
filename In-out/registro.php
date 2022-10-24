@@ -18,6 +18,7 @@
     if(!$paquete){
         echo'no jalo';                
     }else{
-        echo'si jalo';
+        header('location: in-sesion.html');
+        echo '<script>alert("Registrado")</script>';
     }
 ?>
