@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #3F0071;
+    font-family: 'Sen';
+}
+
+    header {
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        background-color: #202040;
+        align-content: center;
+        justify-content: center;
+    }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+            ul li {
+                width: 30px;
+                height: 30px;
+                background-color: #4C3575;
+                color: white;
+                font-family: 'Sen';
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s easy-in-out;
+            }
+                ul li img {
+                    width: 30px;
+                }
+
+                ul li:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                ul li:last-child {
+                    border-radius: 0 5px 5px 0;
+                }
+
+                    ul:hover li:nth-child(odd) {
+                        transform: skewY(15deg);
+                    }
+
+                    ul:hover li:nth-child(even) {
+                        transform: skewY(-15deg);
+                    }
+
+        #busqueda {
+            width: 80%;
+            height: 60%;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Lato';
+            display: block;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+            #busqueda:focus {
+                border: none;
+            }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+            nav a:hover {
+                color: #696969;
+            }
+
+    main {
+        width: 100%;
+        height: 50%;
+        font-family: 'Sen';
+        color: white;
+    }
+        #main {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            column-gap: 10px;
+            padding-left: 10px;
+            margin-right: 10px;
+        }
+            #datos-usu {
+                background-color: #602080;
+                text-align: center;
+                align-content: center;
+                padding: 10px;
+            }
+                #img {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 50%;
+                    border: 5px solid #3F0071;
+                }
+
+            #amigos-e-info {
+                display: grid;
+                grid-template-rows: 50% 50%;
+                row-gap: 10px;
+            }
+                #amigos {
+                    width: auto;
+                    height: auto;
+                    background-color: #602080;
+                    padding: 10px;
+                }
+
+                #info-user {
+                    width: auto;
+                    height: auto;
+                    background-color: #602080;
+                    padding: 10px;
+                }
+                    #info-p {
+                        width: auto;
+                        height: auto;
+                    }
+
+    footer {
+        font-family: 'Sen';
+        width: 100%;
+        height: auto;
+        background-color: #202040;
+        color: white;
+        display: grid;
+        grid-template-rows: 90% 10%;
+    }
+        #us {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            padding: 25px;
+        }
+
+            #desc {
+                display: grid;
+                grid-template-rows: 20% 80%;
+            }
+
+                #desc-tit {
+                    font-size: 22px;
+                }
+
+                #sop-tit {
+                    font-size: 22px;
+                }
+
+                #sop-p {
+                    color: white;
+                }  
+
+                #con-tit {
+                    font-size: 22px;
+                }
+
+                #social a {
+                    color: white;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    font-size: 15px;
+                    grid-template-columns: 5% 95%;
+                }
+
+                    #social a:hover,
+                    #social i:hover {
+                        color: #363636;
+                    }
+
+        #pp-team {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            text-align: center;
+            display: grid;
+            align-content: center;
+        }
