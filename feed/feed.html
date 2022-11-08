@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- LINKS A CSS -->
+    <link rel="stylesheet" href="../style-h-f.css">
+    <link rel="stylesheet" href="feed.css">
+    <!-- LINKS PARA FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <section class="navbar-colapsado" id="links">
+                <a href="javascript:void(0);" class="icon-navbar" onclick="despliegue()">
+                    <span id="icon-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+                </a>
+                <!-- LOGO -->
+                <section id="logo" class="nav-item">
+                    <ul id="logo-lista">
+                        <li><a href=""><img src="../images/logo.png" id="logo-img"></a></li>
+                        <li><a href="">P</a></li>
+                        <li><a href="">O</a></li>
+                        <li><a href="">L</a></li>
+                        <li><a href="">I</a></li>
+                        <li><a href="">P</a></li>
+                        <li><a href="">O</a></li>
+                        <li><a href="">S</a></li>
+                        <li><a href="">T</a></li>
+                    </ul>
+                </section>
+                <!-- BARRA DE BÚSQUEDA -->
+                <section id="barra-nav" class="nav-item">
+                    <form method="post" action="">
+                        <input type="search" placeholder="A quien buscas?" class="bar-nav">
+                        <button type="submit" class="btn-nav">Buscar</button>
+                    </form>
+                </section>
+            </section>
+            <section id="avatar">
+                <!-- LINKS -->
+                <section>
+                    <ul id="links-user">
+                        <li>
+                            <a class="links-navbar" href="">Tus foros</a>
+                        </li>
+                    </ul>
+                </section>
+                <!--AVATAR IMAGEN-->
+                <section id="avatar-img">
+                    <button id="btn-img">
+                        <figure id="tiny-img-profile">
+                            <img src="../images/pp1.jpg">
+                        </figure>
+                    </button>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <main id="con-padre">
+        <!-- AREA DEL USUARIO -->
+        <article id="art1">
+            <!-- USUSARIO -->
+            <section id="u-sec" class="img-usuario">
+                <figure>
+                    <img src="../images/pp1.jpg" alt="">
+                </figure>
+                <p>Yago Vega</p>
+            </section>
+            <!-- AMIGOS DEL USUARIO -->
+            <section id="ami-sec">
+                <p id="tit1">Tus amigos</p>
+                <section>
+                    <section class="amigo">
+                        <a href="">
+                            <img src="../images/Lady Loki(1).jpg" alt="">
+                            <p>Karen Orozco</p>
+                        </a>
+                    </section>
+                    <!-- AMIGOS PARA PRUEBA -->
+                    <section class="amigo">
+                        <a href="">
+                            <img src="../images/D&D5.jpg" alt="">
+                            <p>Miguel Bojorquez</p>
+                        </a>
+                    </section>
+                    <section class="amigo"> 
+                        <a href="">
+                            <img src="../images/Ul7RdJe8.jpg" alt="">
+                            <p>Jorge Ozuna</p>
+                        </a>
+                    </section>
+                    <section class="amigo">
+                        <a href="">
+                            <img src="../images/Captura de pantalla (815).png" alt="">
+                            <p>Saul Serna</p>
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </article>
+        <!-- AREA DE PUBLICACIONES -->
+        <article id="art2">
+            <section id="publicar">
+                <section class="img-usuario">
+                    <img src="../images/pp1.jpg" alt="">
+                </section>
+                <section id="area-esc">
+                    <form action="">
+                        <input class="in-texto" type="text" placeholder="Escribe algo..."><br>
+                        <input type="submit" value="Publicar">
+                    </form>
+                </section>
+            </section>
+            <!-- AQUI COMIENZAN A VERSE PUBLICACIONES DE OTROS USUARIOS -->
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+            <section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem natus velit ipsum nostrum animi perferendis eligendi laborum deserunt minima expedita libero ab beatae pariatur magni error, voluptate ipsa culpa blanditiis earum voluptatum. Iure, enim delectus aspernatur qui atque error, cumque autem veniam doloribus minima repudiandae vero ipsum non et.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section><section class="publicaciones">
+                <section class="pub-amigo">
+                    <a href="#" class="img-usuario nom-usuario">
+                        <img src="../images/Ul7RdJe8.jpg" alt="">
+                        <p>Jorge Ozuna</p>
+                    </a>
+                    <section class="contenido">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus nesciunt doloremque. Et exercitationem consequuntur vitae animi dicta optio laborum maiores eligendi molestias excepturi! Possimus ut error recusandae quasi facere. Adipisci praesentium eligendi earum animi, aliquam eius reiciendis aperiam veritatis nostrum at quos accusamus cum. Porro ratione, aut expedita quae nemo omnis perspiciatis est id. Obcaecati nostrum natus eos quos ducimus commodi quidem nobis ab quasi eaque, eligendi optio, cumque dolor architecto iusto animi amet consectetur delectus, illo qui molestiae. Reiciendis repudiandae corporis totam, id saepe provident? At exercitationem error porro mollitia natus explicabo eius, saepe quia corporis vitae impedit quo cumque facilis, placeat hic ratione nostrum dolorem blanditiis reiciendis atque nulla quae soluta optio. Ipsam, magnam vel sapiente nobis pariatur aperiam dolorem hic minima, nesciunt, eaque culpa natus maiores aliquid consequatur! Error excepturi eaque maiores at! Rem id dicta sequi doloribus molestiae, eveniet explicabo quam dolore? Cum, sapiente autem.</p>
+                    </section>
+                </section>
+                <section class="comentarios">
+                    <a href="" role="button" class="btn-comentar">Comentar</a>
+                </section>
+            </section>
+        </article>
+    </main>
+    
+    <!-- SCRIPT DE JS PARA COLAPSAR MENÚ -->
+    <script src="../app.js"></script>
+</body>
+</html>

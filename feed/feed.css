@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+#art1 {
+    background-color: #120632;  
+}
+
+        #ami-sec {
+            background-color: #2E165B;
+        }
+
+#art2 {
+    background-color: #3F0071;
+}
+    #publicar {
+        background-color: ;
+    }
+
+/* ESTILOS PARA TAMAÑO DE CELULAR */
+@media screen and (max-width: 600px) {
+
+}
+
+/*#####################################################################################################*/
+
+/* ESTILOS PARA TAMAÑO DE TABLET */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+
+}
+
+/*####################################################################################################*/
+
+/* ESTILOS PARA TAMAÑO DESKTOP */
+@media screen and (min-width: 992px) {
+    /* CONTENEDOR PADRE */
+    #con-padre {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+        /* AREA DEL USUARIO */
+           
+
+            /* USUARIO */
+            #u-sec {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+                .img-usuario img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    display: block;
+                    padding: 6px;
+                }
+
+                #u-sec p {
+                    font-size: 20px;
+                    color: #fff;
+                    font-family: 'Nunito';
+                }
+
+            /* AMIGOS DEL USUARIO */
+            #ami-sec {
+                margin: 4px;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Sen';
+                padding: 3px;
+            }
+
+            .amigo {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                align-items: center;
+                font-size: 12px;
+            }
+                .amigo img {
+                    margin: auto;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                .amigo a {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                .amigo p {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+
+        /* AREA DE PUBLICACIONES */
+            
+
+
+            /* PARA QUE EL USUARIO PUBLIQUE */
+            #publicar {
+                display: grid;
+                grid-template-columns: 5% 95%;
+                padding: 10px;
+            }
+                #area-esc .in-texto {
+                    width: 90%;
+                    height: 50px;
+                }
+                    .in-texto::placeholder {
+                        display: flex;
+                        align-items: start;
+                    }
+
+
+
+
+            /* AREA DE PUBLICACIONES DE OTROS USUARIOS */    
+            .publicaciones {
+                display: grid;
+                grid-template-rows: auto 5%;
+                margin: 10px;
+                padding: 10px;
+            }
+                .pub-amigo {
+                    width: auto;
+                    height: auto;
+                    padding: 10px;
+                    display: grid;
+                    grid-template-rows: 30% auto;
+                    color: #fff;
+                    font-family: 'Sen';
+                    border: 1px solid #C2649A;
+                    border-radius: 5px;
+                }
+                .nom-usuario {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                
+                .comentarios {
+                    display: flex;
+                    justify-content: end;
+                }
+                   .btn-comentar {
+                        width: auto;
+                        height: auto;
+                        border: 1px solid #C2649A;
+                        color: #898989;
+                        text-decoration: none;
+                   }
+                
+
+
+
+}
