@@ -1,17 +1,24 @@
+<?php
+    require_once("db/conexion.php");
+
+    $consulta = "SELECT * FROM post";
+    $res = $con->query($consulta);
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Polipost</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/general/general.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../POLIPOST/image/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/image/logo.png" type="image/*">
     </head>
     <body>
         <header id="p-header">
@@ -47,39 +54,47 @@
             <article id="as1"></article>
             <article id="con-se">
                 <br>
-                <article id="con-fo">
-                    <table class="tab1">
-                        <tr class="">
-                            <td class="dat-usu"><img src="../image/logo.png" class="img-fo"><br><p class="">1 Hector Miguel Villafaña Bojorquez</p></td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><button>Ir a foro</button></td>                          
-                        </tr>                    
-                        <tr>
-                            <td class="dat-usu"><img src="../image/logo.png" class="img-fo"><br><p class="">1 Hector Miguel Villafaña Bojorquez</p></td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><button>Ir a foro</button></td>                          
-                        </tr>
-                        
-                        <tr>
-                            <td class="dat-usu"><img src="../image/logo.png" class="img-fo"><br><p class="">1 Hector Miguel Villafaña Bojorquez</p></td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><button>Ir a foro</button></td>                          
-                        </tr>
+                <?php
+                    while($fila = $res->fetch_array()){
+                        $id = $fila['id'];
+                        $id_usuario = $fila['id_usuario'];
+                        $titulo = $fila['titulo'];
+                        $contenido = $fila['contenido'];
+                        $imagen = $fila['imagen'];
 
-                        <tr>
-                            <td class="dat-usu"><img src="../image/logo.png" class="img-fo"><br><p class="">1 Hector Miguel Villafaña Bojorquez</p></td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><button>Ir a foro</button></td>                          
-                        </tr>
+                        $consulta = "SELECT * FROM usuario WHERE id = '$id_usuario'";
+                        $resultado = $con->query($consulta);
+                        $usuario = $resultado->fetch_array();
 
-                        <tr>
-                            <td class="dat-usu"><img src="../image/logo.png" class="img-fo"><br><p class="">1 Hector Miguel Villafaña Bojorquez</p></td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><button>Ir a foro</button></td>                          
-                        </tr>
-                    </table>  
-                </article>  
-                <br>            
+                        $nombre = $usuario['nombre'];
+                        $apellido = $usuario['apellido'];
+                ?>
+
+                    <article id="con-fo">
+                        <table class="tab1">
+                            <tr class="">
+                                <td class="dat-usu">
+                                    <img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo">
+                                    <br>
+                                    <p class=""><?php echo $nombre.' '.$apellido ?></p>
+                                </td>                      
+                                <td class="inf-foro">
+                                    <p><?php echo $titulo ?></p>
+                                    <br>
+                                    <p><?php echo $contenido ?></p>
+                                </td>
+                                <td class="nav-foro">
+                                    <button>Ir a foro</button>
+                                </td>                          
+                            </tr>                    
+                        </table>  
+                    </article>  
+                    <br>
+
+                <?php
+                    }
+                ?>
+
             </article>
             <article id="as2"></article>
         </main>

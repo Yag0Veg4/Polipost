@@ -1,0 +1,16 @@
+button{
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    background-color: #202040;
+    color: white;
+    font-family: 'Sen';
+    cursor: pointer;
+    border: 3px solid #202040;
+}
+
+button:hover{
+    background-color: #313161;
+    border: 3px solid #313161;
+
+}
