@@ -47,7 +47,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
-                transition: transform 0.3s easy-in-out;
+                transition: transform 0.3s ease-in-out;
             }
                 ul li img {
                     width: 40px;
@@ -73,7 +73,7 @@ body {
         color: white;
     }
         #n1 a:hover {
-            color: cyan;
+            color: #696969;
         }
 
     main {

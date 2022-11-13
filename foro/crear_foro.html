@@ -17,7 +17,7 @@
          <nav id="nav-logo">
             <section id="logo">
                 <ul>
-                    <li><a href=""><img src="/image/logo.png" alt=""></a></li>
+                    <li><a href=""><img src="../image/logo.png" alt=""></a></li>
                     <li>C</li>
                     <li>R</li>
                     <li>E</li>
@@ -34,7 +34,7 @@
          <section id="nav-links">
             <nav> <a href="javascript:history.back()" id="RE">Regresar</a></nav>
             <nav id="nav">               
-                <a href="/perfil/perfil-user.html"><img src="/image/logo.png" id="peimg"></a>
+                <a href="/perfil/perfil-user.html"><img src="../image/logo.png" id="peimg"></a>
             </nav>
         </section>
     </header>
@@ -42,13 +42,22 @@
         <form action="" method="">
             <br>
             <article id="glass">
-           <label for=""><h1>Ingresa el titulo de tu foro</h1></label>        
-           <input type="text" name="Tforo" placeholder="Titulo" required id="TF">           
-           <label for=""><h2>Ingresa tu opinion sobre el tema para el foro</h2></label>       
-           <input type="text" name="Opforo" placeholder="Foro Opinion" required id="OF">
-           <br>
-           <input type="submit" name="Cancelar" id="CAN" value="Cancelar">
-           <input type="submit" name="Publicar" id="PU" value="Publicar">
+                <label for=""><h1>Ingresa el titulo de tu foro</h1></label>        
+                <input type="text" name="Tforo" placeholder="Titulo" required id="TF">           
+                <label for=""><h2>Ingresa tu opinion sobre el tema para el foro</h2></label>       
+                <input type="text" name="Opforo" placeholder="Foro Opinion" required id="OF">
+                <br>
+                <br>
+                <label for="imagen"><h2>Agrega una imagen para el foro(opcional)</h2></label>
+                <br>
+                <br>
+                <img src="../image/logo.png" id="foto-fo">
+                <br>
+                <br>
+                <input type="file" id="select-foto">
+                <br>            
+                <input type="submit" name="Cancelar" id="CAN" value="Cancelar">
+                <input type="submit" name="Publicar" id="PU" value="Publicar">
             </article>
             <br>
         </form>        
