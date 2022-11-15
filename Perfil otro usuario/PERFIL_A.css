@@ -213,6 +213,7 @@ body {
                 background-color: #242F9B;                
                 color: white;
                 border-radius: 30px; 
+                cursor: pointer;
             }
 
             #Seguir:hover{
