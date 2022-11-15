@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+    
+}
+
+
+body,html {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-image: url(../image/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Sen';
+}
+
+ul li img {
+    width: 40px;
+}
+
+    header {
+        width: 100%;
+        height: 15vh;
+        background-color: #202040;       
+        float: left;
+        position: fixed;
+        z-index: 1;
+    }
+
+    #logo{
+        width: 70%;
+        height: 100%;
+        float: left;
+        background-color: #202040;
+    }
+
+    #espacio{
+        width: 20%;
+        height: 100%;
+        float: left;
+        background-color: #202040;
+        text-align: center;
+    }
+
+    .nh{
+        width: 10%;
+        height: 100%;
+        float: left;
+        background-color:#202040;
+        text-align: center;
+       
+        
+    }
+
+    #regresar{
+            
+            text-decoration: none;             
+            color: white;
+            margin-bottom: 60px;
+            margin-left: 60%;
+
+        }
+
+        #regresar:hover{
+            color: #696969;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+            ul li {
+                width: 40px;
+                height: 40px;
+                background-color: #4C3575;
+                color: white;
+                font-family: 'Sen';
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out; 
+            }
+               
+
+                ul li:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+
+                ul li:last-child {
+                    border-radius: 0 5px 5px 0;
+                }
+
+                    ul:hover li:nth-child(odd) {
+                        transform: skewY(15deg);
+                    }
+
+                    ul:hover li:nth-child(even) {
+                        transform: skewY(-15deg);
+                    }
+
+                    
+
+
+                
+    main {
+        margin-top: 15vh;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        
+       
+    }
+
+    select{
+        padding: 10px 10px;
+        border: none;
+        margin: 10px 0;
+        width: 120px;
+        text-align: center;
+        font-size: 12px;    
+        font-family: 'Sen';
+        background-color: #0F4C75;
+        border-radius: 2px;
+        color: white;
+        transition: 0.3s all ease-in-out;
+    }
+    input{
+        padding: 10px 10px;
+        border: none;       
+        width: calc(70% - 22px);
+        text-align: center;
+        font-size: 12px;    
+        font-family: 'Sen';
+        background-color: #0F4C75;
+        border-radius: 2px;
+        color: #292929;
+        transition: 0.3s all ease-in-out;
+    }
+    input::placeholder {
+        color: #fff;
+        transition: 0.3s all ease-in-out;
+    }
+
+        input:focus::placeholder {
+            color: #393939;
+        }
+
+        input:focus,
+        input:not(:placeholder-shown) {
+            width: calc(80% - 22px);
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        
+
+            
+   
+   
+
+    label{
+        color: white;
+        text-align: center;
+    }
+     
+    input[type=date]{
+        
+        background-color:#0F4C75;        
+        color:white;
+        width: 66%;
+    }
+                        
+    #glass {
+        width: 45%;
+        height: auto;
+        display: block;
+        margin: auto;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+        color: white;
+        font-size: 10px;
+        display: grid;
+        grid-template-rows: 15% 85%;
+        padding: 20px 20px;
+       
+    }   
+    
+    #tit {
+        height: auto;
+        float: left;
+        text-align:center;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #pasa{
+        width: 50%;
+    }
+
+    #sobre-ti{
+       height: 50%;
+    }
+
+
+
+    
+  
+            
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #202040;
+        color: white;
+        display: grid;
+        grid-template-rows: 90% 10%;
+    }
+        #us {
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            padding: 25px;
+        }
+
+            #desc {
+                display: grid;
+                grid-template-rows: 20% 80%;
+            }
+
+                #desc-tit {
+                    font-size: 22px;
+                }
+
+                #sop-tit {
+                    font-size: 22px;
+                }
+
+                #sop-p {
+                    color: white;
+                }  
+
+                #con-tit {
+                    font-size: 22px;
+                }
+
+                #social a {
+                    color: white;
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    font-size: 15px;
+                    grid-template-columns: 5% 95%;
+                }
+
+                    #social a:hover,
+                    #social i:hover {
+                        color: #363636;
+                    }
+
+        #pp-team {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            text-align: center;
+            display: grid;
+            align-content: center;
+        }
+
+
+        #Boton-can{
+            width: 20%;
+            height: 30%;
+            background-color: #242F9B;                
+            color: white; 
+            cursor: pointer;
+            border: none;
+            font-family: "Sen";
+        }
+
+            #Boton-can:hover{
+                background-color: #646FD4;
+                color: #696969;
+            }
+
+        #Guardar{
+            width: 20%;
+            height: 30%;
+            background-color: #242F9B;                
+            color: white;  
+            font-family: "Sen";
+            cursor: pointer;
+        }
+
+            #Guardar:hover{
+                color: #696969;
+                background-color: #646FD4;
+            }
+
+            #peimg{
+                
+                width: 50px;
+                height: auto;
+                border-radius: 50%;
+                border: 5px solid #3F0071;
+                margin-left: 10px;
+                margin-top: 20px;           
+        }
+
+
+        #peimg:hover{
+            width: 55px;
+        }
+
+        #Musica{
+            width: 40%;
+        }
+
+        #Situacion{
+            width: 40%;
+        }
+
+        #edi-imagen{
+            width: 40%;
+            height: 120%;
+        }
