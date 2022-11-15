@@ -129,12 +129,7 @@ header{
         #regresar{
             text-decoration: none;
             color: white;
-            margin-left: 30px;
-                               
-        }
-
-        #regresar:hover{
-            color: #696969;
+            margin-left: 30px;                      
         }
 
         
