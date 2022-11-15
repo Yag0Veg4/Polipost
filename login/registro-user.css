@@ -157,6 +157,7 @@ body {
                 border: none;
                 border-radius: 12px;
                 color: white;   
+                cursor: pointer;
             }
                 #sub:hover {
                     background-color: #646FD4;
