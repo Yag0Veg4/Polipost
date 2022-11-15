@@ -74,9 +74,9 @@
                         <table class="tab1">
                             <tr class="">
                                 <td class="dat-usu">
-                                    <img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo">
+                                    <a href=""><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
                                     <br>
-                                    <p class=""><?php echo $nombre.' '.$apellido ?></p>
+                                    <a href=""> <p class=""><?php echo $nombre.' '.$apellido ?></p></a>                                   
                                 </td>                      
                                 <td class="inf-foro">
                                     <p><?php echo $titulo ?></p>
