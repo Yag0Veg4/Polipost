@@ -142,6 +142,7 @@ body {
             border-radius: 2px;
             color: #292929;
             transition: 0.3s all ease-in-out;
+        
         }
 
             input::placeholder {

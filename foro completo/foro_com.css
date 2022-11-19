@@ -3,7 +3,12 @@
     margin: 0px;    
 }
 
-html,body{
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
    
     width: 100%;
     height: 100%;
@@ -13,6 +18,10 @@ html,body{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Sen';
+}
+
+td{
+    padding: 10px;
 }
 
 header{
@@ -114,38 +123,27 @@ header{
         background-color: #202040;
     }
 
-    #derecha{
-        width: 5%;
-        height: 100%;        
-        float: left;
-     
-        
-    }
-
-    #izquierda{
-        width: 5%;
-        height: 100%;        
-        float: left;
-             
-    }
+    
 
 main{
-    width: 90%;
+    width: 100%;
     margin-top: 15vh;
     min-height: 45vh;
     height: max-content;
     float: left;    
     z-index: 2;
     margin-top: 120px;
+    padding: 20px;
     
 
 }
 
     #info-foro{
-        width: 100%;
-        height: auto;                       
-        display: block;        
-        float: left;
+        width:80%;
+        min-height: 25vh;
+        height: max-content;        
+        margin: auto;
+        float: center;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
@@ -153,16 +151,68 @@ main{
         border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: 32px;
         color: white;
-        font-size: 10px;       
+        font-size: 15px;       
         padding: 20px 20px;
-        margin-right: 20px;
+        word-wrap: break-word;
     }
 
+      
+    #peimg2{
+                
+        width: 60px;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #3F0071;
+        margin-left: 80px; 
+   
+}
 
+    #img-com{
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #3F0071;
+        
+    }
 
+input {
+    padding: 10px 10px;
+    border: none;
+    margin: 10px 0;
+    width: calc(70% - 22px);
+    text-align: center;
+    font-size: 12px;    
+    font-family: 'Sen';
+    background-color: #0F4C75;
+    border-radius: 2px;
+    color: #292929;
+    transition: 0.3s all ease-in-out;
 
+}
 
+    input::placeholder {
+        color: #fff;
+        transition: 0.3s all ease-in-out;
+    }
 
+        input:focus::placeholder {
+            color: #393939;
+        }
+
+        input:focus,
+        input:not(:placeholder-shown) {
+            width: calc(80% - 22px);
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        .th-info-user{
+            width: 15%;
+            text-align: center;
+        }
+
+        button{
+            margin-left: 717px;
+        }
 
 
 
