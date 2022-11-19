@@ -14,3 +14,12 @@ button:hover{
     border: 3px solid #313161;
 
 }
+
+#email{
+    text-decoration: none;
+    color: white;
+}
+
+#email:hover{
+    color: #696969;
+}
