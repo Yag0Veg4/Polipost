@@ -23,3 +23,8 @@ button:hover{
 #email:hover{
     color: #696969;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
