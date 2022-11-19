@@ -201,7 +201,7 @@ input {
 
         input:focus,
         input:not(:placeholder-shown) {
-            width: calc(80% - 22px);
+          
             background-color: rgba(255,255,255,0.9);
         }
 
