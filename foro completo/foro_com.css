@@ -4,29 +4,31 @@
 }
 
 html,body{
+   
     width: 100%;
     height: 100%;
-    /*background-image: url(../image/fondo2.jpg);
+    background-image: url(../image/fondo2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Sen';*/
+    font-family: 'Sen';
 }
 
 header{
     width: 100%;
     height: 15vh;
     float: left;
-    background-color: red;
+    background-color: #202040;
     position: fixed;
+    z-index: 1;
 }
 
     #logo{
         width: 50%;
         height: 100%;
         float: left;
-        background-color: aqua;
+        background-color: #202040;
     }
 
     ul { 
@@ -72,34 +74,89 @@ header{
         width: 25%;
         height: 100%;
         float: left;
-        background-color: green;
+        background-color: #202040;
     }
 
     #regresar{
         width: 12.5%;
         height: 100%;
         float: left;
-        background-color: purple;
+        background-color: #202040;
+        text-align: center;
     }
+        #Regresar{
+            text-decoration: none;
+            color: white;            
+        }
+
+            #Regresar:hover{
+                color: #696969;
+            }
+
+        #peimg{
+                
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #3F0071;
+            margin-left: 10px;
+            margin-top: 20px;           
+    }
+
+        #peimg:hover{
+            width: 55px;
+        }
 
     #perfil{
         width: 12.5%;
         height: 100%;
         float: left;
-        background-color: blue;
+        background-color: #202040;
     }
 
+    #derecha{
+        width: 5%;
+        height: 100%;        
+        float: left;
+     
+        
+    }
 
+    #izquierda{
+        width: 5%;
+        height: 100%;        
+        float: left;
+             
+    }
 
 main{
-    width: 100%;
+    width: 90%;
     margin-top: 15vh;
     min-height: 45vh;
     height: max-content;
-    float: left;
-    background-color: gold;
+    float: left;    
+    z-index: 2;
+    margin-top: 120px;
+    
 
 }
+
+    #info-foro{
+        width: 100%;
+        height: auto;                       
+        display: block;        
+        float: left;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+        color: white;
+        font-size: 10px;       
+        padding: 20px 20px;
+        margin-right: 20px;
+    }
 
 
 
@@ -171,4 +228,6 @@ footer{
     display: grid;
     align-content: center;
 }
+
+
 

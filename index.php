@@ -4,6 +4,7 @@
     $consulta = "SELECT * FROM post";
     $res = $con->query($consulta);
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
