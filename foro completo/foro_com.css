@@ -220,7 +220,7 @@ input {
         }
 
         button{
-            margin-left: 638px;
+            position: fixed;
         }
 
 
