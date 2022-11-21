@@ -97,6 +97,13 @@ body {
                         color: darkorange;
                     }
 
+                    #CE:hover{
+                        transition: 0.2s all ease-in-out;
+                        color: darkorange;
+                    }
+
+                    
+
                     #EDI:hover  {
                         transition: 0.2s all ease-in-out;
                         color: darkorange;
