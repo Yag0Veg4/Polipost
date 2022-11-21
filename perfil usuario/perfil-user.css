@@ -114,7 +114,7 @@ body {
     main {
         width: 100%;
         height: max-content;
-        min-height: 80vh;
+        min-height: 45vh;
         font-family: 'Sen';
         color: white;
         margin-top: 15vh;
@@ -316,7 +316,7 @@ body {
     footer {
         font-family: 'Sen';
         width: 100%;
-        height: 45vh;
+        height: 40vh;
         background-color: #202040;
         color: white;
         display: grid;
