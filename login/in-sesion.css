@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,11 +14,7 @@ body {
     width: 100%;
     height: 100%;
     float: left;
-    background-image: url(../image/fondo2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(to right, #480066, #0910A8);
     font-family: 'Sen';
 }
 
@@ -45,8 +42,14 @@ body {
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
-                transition: transform 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
             }
+                #img-logo img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 ul li img {
                     width: 40px;
                 }
@@ -119,7 +122,8 @@ body {
                         text-align: right;
                     }
                         #form-log a:hover {
-                            color: #696969; 
+                            transition: 0.2s all ease-in-out;
+                            color: #C2649A; 
                         }
 
                     input {
@@ -205,7 +209,15 @@ body {
 
                 #sop-p {
                     color: white;
-                }  
+                }
+                    #email {
+                        color: #fff;
+                    }
+
+                        #email:hover {
+                            transition: 0.2s all ease-in-out;
+                            color: #C2649A;
+                        }
 
                 #con-tit {
                     font-size: 22px;
@@ -222,7 +234,8 @@ body {
 
                     #social a:hover,
                     #social i:hover {
-                        color: #363636;
+                        transition: 0.2s all ease-in-out;
+                        color: #C2649A;
                     }
 
         #pp-team {
@@ -233,3 +246,7 @@ body {
             display: grid;
             align-content: center;
         }
+/* TAMAÑO DE CELULAR */
+@media screen and (max-width: 600px) {
+    
+}

@@ -1,5 +1,4 @@
 <?php
-
     require_once("../db/conexion.php");
 
     $nombre = $_POST['nombre'];
@@ -14,14 +13,14 @@
     $insert = "INSERT INTO usuario (nombre, apellido, codigo, telefono, correo, password) VALUES ('$nombre', '$apellido', '$codigo', '$telefono', '$correo', '$pass_enc')";
 
     $consulta = "SELECT * FROM usuario WHERE codigo = '$codigo'";
-    $res_con = mysqli_query($conexion, $consulta);
-    if(mysqli_affected_rows($conexion) > 0){
+    $res_con = mysqli_query($con, $consulta);
+    if(mysqli_affected_rows($con) > 0){
         header("Location: error.html");
     }else{
-        if(mysqli_query($conexion, $insert)){
+        if(mysqli_query($con, $insert)){
             header("Location: in-sesion.html");
         }else{
-            echo mysqli_error($conexion);
+            echo mysqli_error($con);
         }
     }
 ?>

@@ -93,7 +93,6 @@ header{
         }
 
         #busqueda{
-           
             width: 80%;
             height: 30%;
             border: none;
@@ -131,6 +130,10 @@ header{
             color: white;
             margin-left: 30px;                      
         }
+            #regresar:hover {
+                transition: 0.3s all ease-in-out;
+                color: darkorange;
+            }
 
         
 

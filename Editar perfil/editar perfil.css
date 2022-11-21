@@ -9,16 +9,8 @@ body,html {
     width: 100%;
     height: 100%;
     float: left;
-    background-image: url(../image/fondo2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(to right, #480066, #0910A8);
     font-family: 'Sen';
-}
-
-ul li img {
-    width: 40px;
 }
 
     header {
@@ -55,13 +47,11 @@ ul li img {
         
     }
 
-    #regresar{
-            
+    #regresar {
             text-decoration: none;             
             color: white;
             margin-bottom: 60px;
             margin-left: 60%;
-
         }
 
         #regresar:hover{
@@ -88,7 +78,9 @@ ul li img {
                 box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
                 transition: transform 0.3s ease-in-out; 
             }
-               
+                ul li img {
+                    width: 40px;
+                }
 
                 ul li:first-child {
                     border-radius: 5px 0 0 5px;
@@ -105,10 +97,6 @@ ul li img {
                     ul:hover li:nth-child(even) {
                         transform: skewY(-15deg);
                     }
-
-                    
-
-
                 
     main {
         margin-top: 15vh;

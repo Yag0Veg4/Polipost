@@ -5,7 +5,7 @@
     $password = $_POST['password'];
 
     $consulta = "SELECT * FROM usuario WHERE codigo = '$codigo'";
-    $res = mysqli_query($conexion, $consulta);
+    $res = mysqli_query($con, $consulta);
     $row = mysqli_fetch_array($res);
 
     if($row){
@@ -13,7 +13,7 @@
             session_start();
 
             $_SESSION['logged'] = "Si";
-            header("Location: /index.php");
+            header("Location: ../index.php");
         }else{
             echo "NO LOGIN";
         }
