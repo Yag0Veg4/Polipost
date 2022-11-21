@@ -100,9 +100,11 @@ body,html {
                 
     main {
         margin-top: 15vh;
-        width: auto;
-        height: auto;
-        padding: 20px;
+        width: 100%;
+        float: left;
+        min-height: 40vh;
+        height: max-content;        
+        z-index: 2;
         
        
     }
@@ -167,7 +169,7 @@ body,html {
                         
     #glass {
         width: 45%;
-        height: ;
+        height: max-content;
         display: block;
         margin: auto;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -181,7 +183,8 @@ body,html {
         display: grid;
         grid-template-rows: 15% 85%;
         padding: 20px 20px;
-       
+        margin-top: 20px;
+        margin-bottom: 20px;
     }   
     
     #tit {
@@ -266,7 +269,7 @@ body,html {
 
         #Boton-can{
             width: 20%;
-            height: 30%;
+            height: 34px;
             background-color: #242F9B;                
             color: white; 
             cursor: pointer;
@@ -318,5 +321,10 @@ body,html {
 
         #edi-imagen{
             width: 40%;
-            height: 120%;
+            height: 120%;            
+        }
+
+        #foto-edi{
+            background-color: #0F4C75 ;
+            color: white;
         }
