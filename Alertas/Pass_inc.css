@@ -13,11 +13,9 @@ body {
     width: 100%;
     height: 100%;
     float: left;
-    background-image: url(fondo2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    
+    background: linear-gradient(to right, #480066, #0910A8);
+    
     font-family: 'Sen';
 }
 
@@ -107,8 +105,7 @@ body {
             width: 20%;
             background-color: #4C3575;
             color: #fff;
-            border-color:aliceblue;
-            margin-left: 29vh;
+            border-color:aliceblue;           
             cursor: pointer;
         }
         
