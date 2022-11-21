@@ -16,8 +16,11 @@ body {
 
     header {
         background-color: #202040;
+        width: 100%;
+        height: 15vh;
         align-items: center;
         justify-content: center;
+        position: fixed;
         z-index: 1;
     }
         #nav-bar {
@@ -99,9 +102,17 @@ body {
                         color: darkorange;
                     }
 
+                   
+
     main {
+        width: 100%;
+        height: max-content;
+        min-height: 80vh;
         font-family: 'Sen';
         color: white;
+        margin-top: 15vh;
+        z-index: 2;
+        
         
     }
         #main {
@@ -201,6 +212,8 @@ body {
                             background: rgb(2,51,181);
                             background: linear-gradient(143deg, rgba(2,51,181,1) 0%, rgba(16,255,248,1) 100%); 
                         }
+
+
                 #stats {
                     padding: 20px;
                     display: flex;
@@ -237,6 +250,11 @@ body {
                             border: 1px solid darkorange;
                         }
 
+                        #seguidores{
+                            margin-left: 60px;
+                        }
+
+
             #info {
                 background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
                 -webkit-backdrop-filter: blur(20px);
@@ -255,6 +273,7 @@ body {
                     .sub-tit {
                         font-size: 18px;
                         letter-spacing: 1px;
+                        word-wrap: break-word;
                     }
 
                 #info-p {
@@ -290,7 +309,7 @@ body {
     footer {
         font-family: 'Sen';
         width: 100%;
-        height: auto;
+        height: 45vh;
         background-color: #202040;
         color: white;
         display: grid;
