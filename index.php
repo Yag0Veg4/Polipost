@@ -100,8 +100,7 @@
                                     <button>Ir a foro</button>
                                 </td>                          
                             </tr>                    
-                        </table>  
-                        <img src="" alt="">
+                        </table>                          
                     </article>  
                     <br>
 
