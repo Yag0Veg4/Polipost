@@ -56,7 +56,7 @@
                     <img src="../Polipost/image/Batman.jpg" id="imp">
                     <section id="opciones-menu">
                         <ul>
-                            <li><a href="../Polipost/perfil usuario/perfil-user.php">Perfil</a></li>
+                            <li><a href="../Polipost/perfil usuario/perfil-user.html">Perfil</a></li>
                             <li><a href="../Polipost/login/logout.php">Sailr</a></li>
                         </ul>
                     </section>
