@@ -10,13 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="shortcut icon" href="../image/logo.png" type="image/*">
     </head>
     <body>
         <header>
-            <nav id="nav-bar">
+            <nav id="nav-logo">
                 <section id="logo">
                     <ul>
                         <li id="img-logo"><a href="../index.php"><img src="../image/logo.png" alt=""></a></li>
@@ -27,49 +26,40 @@
                         <li><a href="../index.php">P</a></li>
                         <li><a href="../index.php">O</a></li>
                         <li><a href="../index.php">S</a></li>
-                        <li><a href="../index.php">T</a></li>
+                        <li><a href="../index.php">T</a></li>                   
                     </ul>
-                </section>
-                <section id="nav-links">
-                    <a href="javascript:history.back()">Regresar</a>
-                </section>
-                <section id="menu-perfil">
-                    <img src="../image/Batman.jpg" id="imp">
-                    <section id="opciones-menu">
-                        <ul>
-                            <li><a href="../perfil usuario/perfil-user.html">Perfil</a></li>
-                            <li><a href="../Polipost/login/logout.php">Sailr</a></li>
-                        </ul>
-                    </section>
-                </section>
+                </section>            
             </nav>
+            <section id="nav-links">
+                <nav> <a href="javascript:history.back()" id="RE">Regresar</a></nav>
+                <nav id="nav">               
+                    <a href="/perfil/perfil-user.html"><img src="../image/logo.png" id="peimg"></a>
+                </nav>
+            </section>
         </header>
-        <main>    
-            <section id="glass">
-                <big><h1 id="tit">CREAR FORO</h1></big>
-                <form action="registro-foro.php" method="post">
-                    <article>
-                        <section class="nom-foro secc">
-                            <label for="" class="sub-tit">Ingresa el nombre de tu foro</label><br>
-                            <input type="text" name="Tforo" placeholder="Titulo" required class="inp">
-                        </section>
-                        <section class="tema-foro secc">
-                            <label for="" class="sub-tit">Describe el tema del que será acerca el foro</label><br>
-                            <p><textarea name="inp-desc" id="inp-desc" placeholder="Describe tu foro"></textarea></p>
-                        </section>
-                        <section class="img-foro secc">
-                            <label for="imagen" class="sub-tit">Agrega una imagen para el foro (opcional)</label>
-                            <img src="../image/logo.png" id="foto-fo">
-                            <input type="file" id="select-foto">
-                        </section>
-                        <section class="btns">
-                            <input type="submit" name="Cancelar" class="btn" value="Cancelar">
-                            <input type="submit" name="Publicar" class="btn" value="Publicar">
-                        </section>
-                    </article>
+        <main>      
+            <form action="" method="">
+                <br>
+                <article id="glass">
+                    <label for=""><h1>Ingresa el titulo de tu foro</h1></label>        
+                    <input type="text" name="Tforo" placeholder="Titulo" required id="TF">           
+                    <label for=""><h2>Ingresa tu opinion sobre el tema para el foro</h2></label>       
+                    <input type="text" name="Opforo" placeholder="Foro Opinion" required id="OF">
                     <br>
-                </form>
-            </section> 
+                    <br>
+                    <label for="imagen"><h2>Agrega una imagen para el foro(opcional)</h2></label>
+                    <br>
+                    <br>
+                    <img src="../image/logo.png" id="foto-fo">
+                    <br>
+                    <br>
+                    <input type="file" id="select-foto">
+                    <br>            
+                    <input type="submit" name="Cancelar" id="CAN" value="Cancelar">
+                    <input type="submit" name="Publicar" id="PU" value="Publicar">
+                </article>
+                <br>
+            </form>        
         </main>
         <footer>        
             <article id="us">

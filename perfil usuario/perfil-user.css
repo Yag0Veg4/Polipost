@@ -17,6 +17,7 @@ body {
     header {
         background-color: #202040;
         width: 100%;
+        height: 15vh;
         align-items: center;
         justify-content: center;
         position: fixed;
