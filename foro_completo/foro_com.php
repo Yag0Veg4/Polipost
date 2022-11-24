@@ -65,7 +65,7 @@
                 <a href="javascript:history.back()" id="Regresar">Regresar</a>
             </nav>               
             <nav id="perfil">
-                <a href="../perfil_usuario/perfil-user.html"><img src="../image/logo.png" id="peimg"></a>
+                <a href="../perfil_usuario/perfil-user.php"><img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="peimg"></a>
             </nav>
         </header>  
         
@@ -91,37 +91,56 @@
                 <br>
                 <br>
                 <label for="comentarios">Comentar:</label>
-                <br>
-                <br>
-                <input type="text" name="comentario" id="comentario" placeholder="comentar">
-                <br>                
-                <button id="comentar">Comentar</button>
-                <br>  
-                <br>             
+                <form action="comentar.php" method="post">
+                    <br>
+                    <br>
+                    <input type="text" name="comentario" id="comentario" placeholder="comentar" required>
+                    <input type="hidden" name="id_post" value="<?php echo $id ?>">
+                    <br>                
+                    <input type="submit" value="Comentar">
+                    <br>  
+                    <br>           
+                </form>    
+                
+
+                <?php
+                    $sql = "SELECT * FROM comentarios WHERE id_post = '$id' ORDER BY id DESC";
+                    $res = $con->query($sql);
+
+
+                    if($res->num_rows == 0){
+                        echo '<p>No hay comentarios en este post</p>';
+                    }
+
+                    while($row = $res->fetch_array()){
+                        $fecha = $row['fecha'];
+                        $comentario = $row['comentario'];
+                        $id_usuario = $row['id_usuario'];
+
+                        $consulta2 = "SELECT nombre,apellido FROM usuario WHERE id='$id_usuario';";
+                        $res2 = $con->query($consulta2);
+                        $row2 = $res2->fetch_array();
+
+                        $nombre = $row2['nombre'];
+                        $apellido = $row2['apellido'];
+                ?>
                 <table>
                     <tr>
                         <td class="th-info-user">
-                            <a href=""><img src="../image/logo.png" id="img-com"></a>
-                            <a href=""><p>Yago Matteo Vega Sandoval</p></a>
+                            <a href=""><img src="/general/img_usuario.php?id="<?php echo $id_usuario ?> id="img-com"></a>
+                            <a href=""><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
                         </td>                        
                         <td>
-                            <p>18/11/22</p>
-                            <p>ra parte se la quedo su hermano los dos fueron ingresados a las cajas y mandados a diferentes planetas pero el mago encontró una de las cajas y elimino al hermano menor de Tapion es por eso que la otra parte del cuerpo de Gilligan estaba suelto entonces, después de esta historia Tapion no puede contener mas a Gilligan y sus dos partes se unen todos luchan pero son vencidos fácilmente, al final Goku se transforma y usa la técnica del puño del dragon derrotando a Gilligan.</p>
+                            <p><?php echo $fecha ?></p>
+                            <p><?php echo $comentario ?></p>
                         </td>
                     </tr>
                 </table>
-                <table>
-                    <tr>
-                        <td class="th-info-user">
-                            <a href=""><img src="../image/logo.png" id="img-com"></a>
-                            <a href=""><p>Yago Matteo Vega Sandoval</p></a>
-                        </td>                        
-                        <td>
-                            <p>18/11/22</p>
-                            <p>ra parte se la quedo su hermano los dos fueron ingresados a las cajas y mandados a diferentes planetas pero el mago encontró una de las cajas y elimino al hermano menor de Tapion es por eso que la otra parte del cuerpo de Gilligan estaba suelto entonces, después de esta historia Tapion no puede contener mas a Gilligan y sus dos partes se unen todos luchan pero son vencidos fácilmente, al final Goku se transforma y usa la técnica del puño del dragon derrotando a Gilligan.</p>
-                        </td>
-                    </tr>
-                </table>
+                <?php
+                    }
+                ?>
+
+
             </article>
         </main>
          

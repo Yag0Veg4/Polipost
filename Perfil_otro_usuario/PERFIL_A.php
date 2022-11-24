@@ -64,7 +64,7 @@
                 <a href="javascript:history.back()" id="RE">Regresar</a>               
             </nav> 
             <nav id="perfil">
-                <a href="../perfil_usuario/perfil-user.html"><img src="../image/logo.png" id="peimg"></a>
+                <a href="../perfil_usuario/perfil-user.php"><img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="peimg"></a>
             </nav> 
         
     </header>
