@@ -1,3 +1,28 @@
+<?php
+    require_once("../db/conexion.php");
+    session_start();
+
+    $id = $_GET['id'];
+    $consulta = "SELECT * FROM post WHERE id = '$id';";
+
+    $res = $con->query($consulta);
+    $row = $res->fetch_array();
+
+    $titulo = $row['titulo'];
+    $contenido = $row['contenido'];
+    $imagen = $row['imagen'];
+    $fecha = $row['fecha'];
+    $id_usuario = $row['id_usuario'];
+
+    $consulta2 = "SELECT nombre,apellido FROM usuario WHERE id='$id_usuario';";
+    $res2 = $con->query($consulta2);
+    $row2 = $res2->fetch_array();
+
+    $nombre = $row2['nombre'];
+    $apellido = $row2['apellido'];
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,14 +71,23 @@
         
         <main>
             <article id="info-foro">  
-                <a href=""><img src="../image/logo.png" id="peimg2"></a>
+                <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" id="peimg2"></a>
                 <br>  
                 <br>            
-                <p><a href="">Miguel Hector Villafaña Bojorquez</a><br><br> 11/22/33 <br><br></p>  
-                <p>Es esta película fue la mas escogida entre todos.  En esta se presenta a un personaje nuevo llamado Tapion el cual esta dentro de una caja musical que viene de otro planeta, la historia de la película empieza con un mago que quiere abrir la caja pero no puede entonces los guerreros Z le ayudan juntando las esferas del dragon para poder pedir como deseo que se habrá la caja, el deseo es concedido y un joven sale de la caja este joven es Tapion, después de ser liberado el dice a los guerreros que fue un error el haberlo liberado y se va a un sitio abandonado, después aparece la mitad de cuerpo de un monstruo llamado Gilligan en la ciudad pues el mago libero esa parte, después Tapion va a casa de Bulma porque creo una caja musical en la que podría contener la otra parte del monstruo, allí habla sobre la historia del monstruo en donde cuenta que fue creado por los magos para destruir el lugar en donde vivía para detenerlo usaron dos ocarinas y espadas lo dividieron en dos la parte de la cintura a la cabeza Tapion se la quedo y la otra parte se la quedo su hermano los dos fueron ingresados a las cajas y mandados a diferentes planetas pero el mago encontró una de las cajas y elimino al hermano menor de Tapion es por eso que la otra parte del cuerpo de Gilligan estaba suelto entonces, después de esta historia Tapion no puede contener mas a Gilligan y sus dos partes se unen todos luchan pero son vencidos fácilmente, al final Goku se transforma y usa la técnica del puño del dragon derrotando a Gilligan. </p>                                                    
+                <p><a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><?php echo $nombre ?> <?php echo $apellido ?></a><br><br> <?php echo $fecha ?> <br><br></p>  
+                <h3><?php echo $titulo ?></h3>
+                <p><?php echo $contenido ?></p>                                                    
                 <br>
                 <br>
-                <img src="../image/Batman.jpg" id="img-foro">
+                <?php
+                    if($imagen != NULL){
+                ?>
+
+                <img src="/general/img_foro.php?id=<?php echo $id ?>" id="img-foro"></td>
+                
+                <?php
+                    }
+                ?>
                 <br>
                 <br>
                 <label for="comentarios">Comentar:</label>

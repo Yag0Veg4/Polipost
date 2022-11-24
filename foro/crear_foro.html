@@ -38,13 +38,13 @@
             </section>
         </header>
         <main>      
-            <form action="" method="">
+            <form action="subir_foro.php" method="post" enctype="multipart/form-data">
                 <br>
                 <article id="glass">
                     <label for=""><h1>Ingresa el titulo de tu foro</h1></label>        
-                    <input type="text" name="Tforo" placeholder="Titulo" required id="TF">           
+                    <input type="text" name="titulo" placeholder="Titulo" required id="TF">           
                     <label for=""><h2>Ingresa tu opinion sobre el tema para el foro</h2></label>       
-                    <input type="text" name="Opforo" placeholder="Foro Opinion" required id="OF">
+                    <input type="text" name="contenido" placeholder="Foro Opinion" required id="OF">
                     <br>
                     <br>
                     <label for="imagen"><h2>Agrega una imagen para el foro(opcional)</h2></label>
@@ -53,9 +53,9 @@
                     <img src="../image/logo.png" id="foto-fo">
                     <br>
                     <br>
-                    <input type="file" id="select-foto">
+                    <input type="file" name="imagen" id="select-foto">
                     <br>            
-                    <input type="submit" name="Cancelar" id="CAN" value="Cancelar">
+                    <button id="CAN" onclick="javascript:history.back()">Cancelar</button>
                     <input type="submit" name="Publicar" id="PU" value="Publicar">
                 </article>
                 <br>

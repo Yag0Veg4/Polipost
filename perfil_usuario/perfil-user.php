@@ -1,10 +1,33 @@
 <!-- SCRIPT PHP -->
 <?php
     session_start();
+    require_once("../db/conexion.php");
 
+    $id = $_SESSION['id'];
 
+    $sql = "SELECT * FROM usuario WHERE id='$id'";
+    $res = $con->query($sql);
+    $row = $res->fetch_array();
+
+    $nombre = $row['nombre'];
+    $apellido = $row['apellido'];
+    $telefono = $row['telefono'];
+    $correo = $row['correo'];
+    $municipio = $row['municipio'];
+    $facebook = $row['facebook'];
+    $instagram = $row['instagram'];
+    $twitter = $row['twitter'];
+    $num_seguidores = $row['num_seguidores'];
+    $sobre_mi = $row['sobre_mi'];
+    $carrera = $row['carrera'];
+    $semestre = $row['semestre'];
+    $situ_amor = $row['situ_amor'];
+    $pasatiempo = $row['pasatiempo'];
+    $p_favorito = $row['p_favorita'];
+    $musica = $row['musica'];
+    $apodo = $row['apodo'];
+    $fecha_nac = $row['fecha_nac'];
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -46,51 +69,53 @@
         <article id="main">
             <article id="datos-usu">
                 <section id="foto-perfil">
-                    <img src="../image/Batman.jpg" id="img">
+                    <img src="/general/img_usuario.php?id=<?php echo $id ?>" id="img">
                 </section>
                 <section id="nom-usuario">
-                    <h3>Yago Vega</h3>
+                    <h3><?php echo $nombre?> <?php echo $apellido?></h3>
                 </section>
                 <section id="info-y-redes">
                     <section id="contacto">
                         <p class="contactos">
                             <svg xmlns="http://www.w3.org/2000/svg" id="mail" class="icon icon-tabler icon-tabler-mail" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3 7 12 13 21 7"></polyline></svg>
-                            batiyago@gmail.com
+                            <?php echo $correo?>
                         </p>
                         <p class="contactos">
                             <svg xmlns="http://www.w3.org/2000/svg" id="tel" class="icon icon-tabler icon-tabler-phone" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path></svg>
-                            3310663104
+                            <?php echo $telefono?>
+
                         </p>
                         <p class="contactos">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" id="map" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <circle cx="12" cy="11" r="3"></circle>
                             <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path></svg>
-                            Tlaquepaque
+                            <?php echo $municipio?>
+
                         </p>
                     </section>
                     <section id="redes-sociales">
                         <section class="sociales" id="facebook">
-                            <a href="">
+                            <a href="<?php echo $facebook ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg>
                             </a>
                         </section>
                         <section class="sociales" id="instagram">
-                            <a href="">
+                            <a href="<?php echo $instagram ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg>
                             </a>
                         </section>
                         <section class="sociales" id="twitter">
-                            <a href="">
+                            <a href="<?php echo $twitter ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg>
                             </a>
                         </section>
                     </section>
                     <section id="stats">
                         <section id="seguidores">
-                            <h3>800</h3>
+                            <h3><?php echo $num_seguidores?></h3>
                             <p>SEGUIDORES</p>                            
                         </section>                        
                     </section>
@@ -104,39 +129,39 @@
                     <section id="info-p">
                         <section id="sobre-mi">
                             <h5 class="sub-tit">Sobre mi:</h5>
-                            <p>Dragon Ball En esta serie se nos muestra como Goku conoce a Bulma cuando es atropellado y este la confund visto esta serie sabés de que partes hablo, pero bueno olvidémonos de eso y hablemos sobre la historia de la serie algo que me gusta de la historia es el como un pequeño Joven por asares del destino comienza una gran aventura, en donde con el pasar del tiempo conoce muchos amigos y cumple sus sueños de volverse mas fuerte cada día. Otra cosa que me agrada de esta serie son los torneos de las artes </p>
+                            <p><?php echo $sobre_mi?></p>
                         </section>
                         <section id="carrera">
                             <h5 class="sub-tit">Carrera:</h5>
-                            <p>TPSI</p>
+                            <p><?php echo $carrera?></p>
                         </section>
                         <section id="semestre">
                             <h5 class="sub-tit">Semestre:</h5>
-                            <p>7</p>
+                            <p><?php echo $semestre?></p>
                         </section>
                         <section id="sit-sent">
                             <h5 class="sub-tit">Situacion sentimental:</h5>
-                            <p>En una relación</p>
+                            <p><?php echo $situ_amor?></p>
                         </section>
                         <section id="pasatiempos">
                             <h5 class="sub-tit">Patiempo:</h5>
-                            <p>Dibujar</p>
+                            <p><?php echo $pasatiempo?></p>
                         </section>
                         <section id="peli">
                             <h5 class="sub-tit">Pelicula o serie favorita:</h5>
-                            <p>Pornhub</p>
+                            <p><?php echo $p_favorito?></p>
                         </section>
                         <section id="musica">
                             <h5 class="sub-tit">Musica:</h5>
-                            <p>Rock</p>
+                            <p><?php echo $musica?></p>
                         </section>
                         <section id="apodo">
                             <h5 class="sub-tit">Apodo:</h5>
-                            <p>Batiyago</p>
+                            <p><?php echo $apodo?></p>
                         </section>
                         <section id="fecha-nac">
                             <h5 class="sub-tit">fecha de nacimiento:</h5>
-                            <p>11/09/2004</p>
+                            <p><?php echo $fecha_nac?></p>
                         </section>
                     </section>
                     <section class="btn-act" id="ver-mas">

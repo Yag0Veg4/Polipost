@@ -1,5 +1,6 @@
 <?php
     require_once("db/conexion.php");
+    session_start();
 
     $consulta = "SELECT * FROM post";
     $res = $con->query($consulta);
@@ -24,14 +25,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <!-- IMAGEN ICONO -->
-        <link rel="shortcut icon" href="../Polipost/image/logo.png" type="image/*">
+        <link rel="shortcut icon" href="../image/logo.png" type="image/*">
     </head>
     <body>
         <header id="p-header">
             <nav id="nav-bar">
                 <section id="logo">
                     <ul>
-                        <li id="img-logo"><a href=""><img src="../Polipost/image/logo.png" alt=""></a></li>
+                        <li id="img-logo"><a href=""><img src="../image/logo.png" alt=""></a></li>
                         <li>P</li>
                         <li>O</li>
                         <li>L</li>
@@ -49,15 +50,15 @@
                     </form>
                 </section>
                 <section id="foros">
-                    <a href="../Polipost/foros_usuario/foros_usuario.html">Tus foros</a>
-                    <a href="../Polipost/foro/crear_foro.html">Crea tu foro</a>
+                    <a href="../foros_usuario/foros_usuario.php">Tus foros</a>
+                    <a href="../foro/crear_foro.html">Crea tu foro</a>
                 </section>
                 <section id="menu-perfil">
-                    <img src="../Polipost/image/Batman.jpg" id="imp">
+                    <img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
                     <section id="opciones-menu">
                         <ul>
-                            <li><a href="../Polipost/perfil_usuario/perfil-user.html">Perfil</a></li>
-                            <li><a href="../Polipost/login/logout.php">Sailr</a></li>
+                            <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
+                            <li><a href="../login/logout.php">Sailr</a></li>
                         </ul>
                     </section>
                 </section>
@@ -72,6 +73,7 @@
                         $id = $fila['id'];
                         $id_usuario = $fila['id_usuario'];
                         $titulo = $fila['titulo'];
+                        $fecha = $fila['fecha'];
                         $contenido = $fila['contenido'];
                         $imagen = $fila['imagen'];
 
@@ -87,9 +89,9 @@
                         <table class="tab1">
                             <tr class="">
                                 <td class="dat-usu">
-                                    <a href=""><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
+                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
                                     <br>
-                                    <a href=""> <p class=""><?php echo $nombre.' '.$apellido ?></p></a>                                   
+                                    <a href="/foro_completo/foro_com.php?id=<?php echo $id ?>"> <p class=""><?php echo $nombre.' '.$apellido ?><br><br><b>Fecha de publicación:</b><br><?php echo $fecha ?></p></a>                                   
                                 </td>                      
                                 <td class="inf-foro">
                                     <p><?php echo $titulo ?></p>
@@ -97,9 +99,20 @@
                                     <p><?php echo $contenido ?></p>
                                 </td>
                                 <td class="nav-foro">
-                                    <button>Ir a foro</button>
+                                    <a href="/foro_completo/foro_com.php?id=<?php echo $id ?>"><button>Ir a foro</button></a>
                                 </td>                          
-                            </tr>                    
+                            </tr>    
+                            
+                            <?php
+                                if($imagen != NULL){
+                            ?>
+                                <tr>
+                                    <td colspan="3"><img src="/general/img_foro.php?id=<?php echo $id ?>"></td>
+                                </tr>
+                            <?php
+                                }
+                            ?>
+                            
                         </table>                          
                     </article>  
                     <br>

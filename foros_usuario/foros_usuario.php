@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    require_once("../db/conexion.php");
+
+    $id = $_SESSION['id'];
+    $consulta = "SELECT * FROM post WHERE id_usuario='$id'";
+    $res = $con->query($consulta);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -47,17 +56,58 @@
             <article id="as1"></article>
             <article id="con-se">
                 <br>
-                <article id="con-fo">
-                    <table class="tab1">
-                        <tr class="">
-                            <td class="dat-usu"> <a href="../Perfil_otro_usuario/PERFIL_A.html" class="ami-user"><img src="../image/logo.png" class="img-fo"><br><p class="">Hector Miguel Villafaña Bojorquez</p></a> </td>                      
-                            <td class="inf-foro"><p>Titulo Foro : Es bueno ser furro?</p><br><p>Soy furro en las noches y en el dia tambien pero se ve menos dyeugfegfregfgfyugsfyudsgfydsfdsgyfgdsfdsfdsgyf de fre f rf rf rfre fr  fr rf rf rf r fre fr f rf r ef re fre </p></td>
-                            <td class="nav-foro"><a href="../foro_completo/foro_com.html"><button>Ir a foro</button></a></td>                          
-                        </tr>                    
-                        
-                    </table>  
-                </article>  
-                <br>            
+                <?php
+                    while($fila = $res->fetch_array()) {
+                        $id = $fila['id'];
+                        $id_usuario = $fila['id_usuario'];
+                        $titulo = $fila['titulo'];
+                        $fecha = $fila['fecha'];
+                        $contenido = $fila['contenido'];
+                        $imagen = $fila['imagen'];
+
+                        $consulta = "SELECT * FROM usuario WHERE id = '$id_usuario'";
+                        $resultado = $con->query($consulta);
+                        $usuario = $resultado->fetch_array();
+
+                        $nombre = $usuario['nombre'];
+                        $apellido = $usuario['apellido'];
+                ?>
+
+                    <article id="con-fo">
+                        <table class="tab1">
+                            <tr class="">
+                                <td class="dat-usu">
+                                    <a href=""><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
+                                    <br>
+                                    <a href=""> <p class=""><?php echo $nombre.' '.$apellido ?><br><br><b>Fecha de publicación:</b><br><?php echo $fecha ?></p></a>                                   
+                                </td>                      
+                                <td class="inf-foro">
+                                    <p><?php echo $titulo ?></p>
+                                    <br>
+                                    <p><?php echo $contenido ?></p>
+                                </td>
+                                <td class="nav-foro">
+                                    <button>Ir a foro</button>
+                                </td>                          
+                            </tr>    
+                            
+                            <?php
+                                if($imagen != NULL){
+                            ?>
+                                <tr>
+                                    <td colspan="3"><img src="/general/img_foro.php?id=<?php echo $id ?>"></td>
+                                </tr>
+                            <?php
+                                }
+                            ?>
+                            
+                        </table>                          
+                    </article>  
+                    <br>
+
+                <?php
+                    }
+                ?>          
             </article>
             <article id="as2"></article>
         </main>

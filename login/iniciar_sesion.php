@@ -13,6 +13,7 @@
             session_start();
 
             $_SESSION['logged'] = "Si";
+            $_SESSION['id'] = $row['id'];
             header("Location: ../index.php");
         }else{
             echo "NO LOGIN";

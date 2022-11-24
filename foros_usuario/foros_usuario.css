@@ -304,3 +304,7 @@ footer{
     display: grid;
     align-content: center;
 }
+
+img{
+    width: 80%;
+}
