@@ -1,0 +1,24 @@
+button{
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    background-color: #202040;
+    color: white;
+    font-family: 'Sen';
+    cursor: pointer;
+    border: 3px solid #202040;
+}
+
+#email{
+    text-decoration: none;
+    color: white;
+}
+
+#email:hover{
+    color: #696969;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

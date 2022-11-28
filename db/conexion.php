@@ -1,5 +1,5 @@
 <?php
-    //error_reporting(0);
+    $con = new mysqli("polipost.coe0irawvnp8.us-east-1.rds.amazonaws.com", "admin", "12345678", "polipost");
+    $con->set_charset("UTF8");
 
-    $c = new mysqli("recetario-de-mi-tia.coe0irawvnp8.us-east-1.rds.amazonaws.com", "admin", "12345678", "recetario");
 ?>
