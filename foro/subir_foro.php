@@ -7,7 +7,7 @@
     $titulo = $_POST['titulo'];
     $contenido = $_POST['contenido'];
 
-    $fecha = date('m/d/y');
+    $fecha = date('d/m/y');
 
     if($img = $_FILES['imagen']['tmp_name']){
         $imagen = addslashes(file_get_contents($img));
