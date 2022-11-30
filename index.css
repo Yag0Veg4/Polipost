@@ -18,12 +18,11 @@ header{
 
     #nav-bar {
         display: grid;
-        grid-template-columns: 30% 49% 14% 7%;
+        grid-template-columns: 40% 35% 25%;
     }
 
     #logo{
         float: left;
-        background-color: #202040;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,14 +33,15 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
     }
         #logo ul li {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             background-color: #4C3575;
             color: white;
             font-family: 'Sen';
-            font-size: 18px;
+            font-size: 22px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,8 +55,8 @@ header{
             }
 
             #logo ul li img {
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
             }
 
             #logo ul li:first-child {
@@ -130,23 +130,6 @@ header{
                 border: .2px solid darkorange;
             }
 
-    #foros {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 10px;
-    }
-        #foros a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 13px;
-            transition: 0.2s all ease-in-out;
-        }
-            #foros a:hover {
-                color: darkorange;
-                font-size: 14px;
-            }
-
     #menu-perfil {
         display: flex;
         justify-content: end;
@@ -198,42 +181,11 @@ header{
             border-radius: 50%;
         }
 
-
-main{
-    width: 100%;
-    height: max-content;
-    min-height: 45vh;
-    margin-top: 15vh;
-    float: left;
-    z-index: 2;
-}
-
-    #as1{
-        width: 10%;
-        height: 100%;        
-        
-        float: left;
-    }
-
-    #con-se{
-        width: 80%;
-        height: 100%;        
-        margin-left: 10%;
-        float: left;
-    }
-
-    #as2{
-        width: 10%;
-        height: 100%;
-      
-        float: left;
-    }
-
     #con-fo{
-        width: 90%;
+        width: 75%;
         height: auto;
         display: block;
-        margin: auto;
+        margin: 50px auto;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
@@ -242,107 +194,166 @@ main{
         border-radius: 32px;
         color: white;
         font-size: 15px;
-        display: grid;
-        grid-template-rows: 15% 85%;
-        padding: 20px 20px;
+        padding: 20px;
     }
 
-  table{
-    border-spacing: 30px;
-  }
-
-    td{
-        margin-top: 20%;
-        text-align: center;
-    }
-
-    .dat-usu{
-        
-        width: 20%;
-    }
-    .inf-foro{
-        width:60% ;
-    }
-    .nav-foro{
-        
-        width: 20%;
-    }
-           .img-fo{
-                width: 40px;
-                height: auto;
-                border-radius: 50%;
-                border: 5px solid #3F0071;   
-                           
-           } 
-
-
-
-
-
-footer{
-    font-family: 'Sen';
-    width: 100%;
-    height: 40vh;
-    background-color: #202040;
-    color: white;
-    display: grid;
-    grid-template-rows: 90% 10%;
-    margin-top: 90%;
-    
-}
-
-#us {
-    display: grid;
-    grid-template-columns: 33% 34% 33%;
-    padding: 25px;
-}
-
-    #desc {
-        display: grid;
-        grid-template-rows: 20% 80%;
-    }
-
-        #desc-tit {
-            font-size: 22px;
-        }
-
-        #sop-tit {
-            font-size: 22px;
-        }
-
-        #sop-p {
-            color: white;
-        }  
-
-        #con-tit {
-            font-size: 22px;
-        }
-
-        #social a {
-            color: white;
+        .con-foro {
+            width: 100%;
+            height: auto;
             display: grid;
-            align-content: center;
-            justify-content: center;
-            font-size: 15px;
-            grid-template-columns: 5% 95%;
-            text-decoration: none;
+            grid-template-columns: 8% 80% 12%;
         }
-
-            #social a:hover,
-            #social i:hover {
-                color: #363636;
+            .dat-usu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 5px;
             }
 
-#pp-team {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    text-align: center;
-    display: grid;
-    align-content: center;
+                .img-fo{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid #3F0071;
+                    transition: 0.2s all;
+                    display: block;
+                    margin: auto;
+                }
+                    .img-fo:hover {
+                        opacity: 0.7;
+                    }
+
+                .nom-usuario {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.2s all ease-in-out;
+                    text-align: center;
+                }
+                    .nom-usuario:hover {
+                        color: magenta;
+                    }
+
+        .inf-foro{
+            color: #fff;
+            padding: 15px;
+        }
+            .tit-foro {
+                text-align: center;
+                padding: 5px;
+                font-size: 25px;
+            }
+
+            .fecha-foro {
+                font-size: 13px;
+                padding: 10px 0;
+            }
+
+            .cont-foro {
+                text-align: center;
+            }
+
+            .img-foro {
+                width: 150px;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+            }
+
+            
+        .nav-foro {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+            .btn-foro {
+                width: 100px;
+                height: auto;
+                padding: 7px;
+                border: 1px solid darkorange;
+                border-radius: 3px;
+                color: darkorange;
+                text-decoration: none;
+                font-size: 18px;
+                transition: 0.2s all;
+            }
+                .btn-foro:hover {
+                    border: 1px solid magenta;
+                    color: magenta;
+                }
+
+
+/*  ESTILOS PARA CELULAR */
+@media only screen and (max-width:600px) {
+    #barra-bus {
+        display: none;
+    }
+    
+    #nav-bar {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        margin-bottom: 60px;
+    }
+        
+
+        #logo ul li {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        #logo ul li img {
+            width: 30px;
+            height: 30px;
+        }
+
+    #opciones-menu {
+        margin-top: 110px;
+    }
+
+    .con-foro {
+        display: flex;
+        flex-direction: column;
+    }
+        .dat-usu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .nav-foro {
+            display: flex;
+            justify-content: center;
+        }
 }
 
+@media screen and (min-width:600px) and (max-width:950px) {
+    #nav-bar {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-bottom: 60px;
+    }
+        #barra-bus {
+            display: none;
+        }
 
-img{
-    width: 80%;
+    .con-foro {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .dat-usu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-foro {
+            display: flex;
+            justify-content: center;
+        }
 }

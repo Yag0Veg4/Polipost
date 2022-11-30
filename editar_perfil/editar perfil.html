@@ -14,168 +14,148 @@
     <link rel="shortcut icon" href="../image/logo.png" type="image/*">
 </head>
 <body>
-    <header>        
-            <nav id="logo">                
+    <header>
+        <nav id="nav-bar">
+            <section id="logo">
                 <ul>
-                    <li><a href="../index.php"><img src="../image/logo.png" alt="" class="logo"></a></li>
-                    <li><a href="../index.php">E</a></li>
-                    <li><a href="../index.php">D</a></li>
+                    <li id="img-logo"><a href="../index.php"><img src="../image/logo.png" alt=""></a></li>
+                    <li><a href="../index.php">P</a></li>
+                    <li><a href="../index.php">O</a></li>
+                    <li><a href="../index.php">L</a></li>
                     <li><a href="../index.php">I</a></li>
-                    <li><a href="../index.php">T</a></li>
-                    <li><a href="../index.php">A</a></li>  
-                    <li><a href="../index.php">R</a></li> 
-                    <li><a href="../index.php"></a></li>
-                    <li><a href="../index.php">D</a></li>
-                    <li><a href="../index.php">A</a></li>
-                    <li><a href="../index.php">T</a></li>
+                    <li><a href="../index.php">P</a></li>
                     <li><a href="../index.php">O</a></li>
                     <li><a href="../index.php">S</a></li>
-                                         
-                    
-                </ul>              
-            </nav>
-            <section id="espacio">
-                <br>
-                <br>
-                <a href="javascript:history.back()" id="regresar">Regresar</a>
+                    <li><a href="../index.php">T</a></li>
+                </ul>
             </section>
-            <nav class="nh">
-                <a href="../perfil_usuario/perfil-user.php"><img src="../image/logo.png" id="peimg"></a>
-            </nav>
+            <section id="menu-perfil">
+                <img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
+                <section id="opciones-menu">
+                    <ul>
+                        <li><a href="javascript:history.back()" >Regresar</a></li>
+                        <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
+                        <li><a href="../login/logout.php">Salir</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
     </header>
     <main>
         <article id="glass">
             <section id="tit"> 
+                <h1>EDITAR DATOS</h1>
+            </section>
+            <section id="formulario">
                 <form action="editar_perfil.php" method="post" enctype="multipart/form-data">
-                    <label for="carrera"> Carrera </label> &nbsp;  
-                    <select name="carrera" class="car" required>
-                        <option>TPSI</option>
-                        <option>TPQAPA</option>
-                        <option>TPEI</option>
-                        <option>TPMI</option>
-                        <option>TPMF</option>
-                        <option>TPP</option>
-                        <option>TPPQI</option>
-                        <option>BTDC</option>
-                        <option>BTQCM</option>
-                        <option></option>
-                    </select> &nbsp; 
-                    <label for="grado"> Semestre </label> &nbsp; 
-                    <select name="semestre" required>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option></option>
-                    </select>
-                    <br>
-                    <br>
-                    <label class="sa"> Situación sentimental </label> &nbsp; 
-                    <select name="situ_amor" id="Situacion" required>
-                        <option>Soltero(a)</option>
-                        <option>En una relación</option>
-                        <option>En una relación abierta</option>
-                        <option> Es complicado </option>
-                    </select>            
-                    <br>
-                    <br>
-                    <label class="sa"> Música </label> &nbsp; 
-                    <select name="musica" id="Musica" required>
-                        <option>Música clasica</option>
-                        <option>Rockerito</option>
-                        <option>Pop</option>
-                        <option>Kpop</option>
-                        <option>Banda (naco)</option>
-                        <option>Jazz</option>
-                        <option>Cumbia</option>
-                        <option>Bachata</option>
-                        <option>De todo un poquito</option>
-                    </select>
-                    <br>
-                    <br>
-                        <label class="sa"> Pasatiempo favorito </label> &nbsp; 
-                    <br>
-                    <select name="pasatiempo" id="pasa">
-                        <option>Dibujar</option>
-                        <option>Hacer ejercicio</option>
-                        <option>Tocar algún instrumento</option>
-                        <option> Leer </option>
-                        <option>Jugar videojuegos</option>
-                        <option>Cantar</option>
-                        <option>Tomar fotos</option>
-                    </select>
-                        <input type="text" name="otro" placeholder="OTRO" id="otro">
-                        <br>
-                        <br>
-                    <label class="sa"> Pelicula o serie favorita</label>
-                        <br>                        
-                    <input type="text" name="p_favorita" placeholder="peli y serie fav" class="sa">
-                        <br>
-                        <br>
-                    <label class="sa"> Apodo (opcional)</label>
-                        <br>
-                    <input type="text" name="apodo" placeholder="Apodo" class="sa">
-                        <br>
-                        <br>
-                    <label class="sa"> Escribe algunos datos sobre ti</label>           
-                        <br> 
-                    <input type="text" name="sobre_mi" placeholder="Datos sobre mi" id="sobre-ti" required>
-                        <br>
-                        <br>     
-                    <label for="direccion">Municipio en donde vives</label> 
-                        <br>
-                    <input type="text" name="municipio" name="dire" id="muni" placeholder="Municipio" required>
-                        <br>
-                        <br>                      
-                    <label for="rs"> Tu fecha de nacimiento</label>
-                        <br>
-                    <input type="date" name="fecha_nac" required>
-                        <br>
-                        <br>
-                    <label for="Redes sociales:">Redes sociales:</label>
-                        <br>
-                        <br>
-                    <label for="Facebook">Ingresa el link de tu facebook (opcional)</label>    
-                        <br>
-                    <input type="url" name="facebook" id="facebook" placeholder="Facebook"> 
-                        <br>
-                        <br>
-                    <label for="Instagram">Ingresa el link de tu instagram (opcional)</label>    
-                        <br>
-                    <input type="url" name="instagram" id="instagram" placeholder="Instagram">      
-                        <br>
-                        <br>
-                    <label for="Twitter">Ingresa el link de tu twitter (opcional)</label>    
-                        <br>
-                    <input type="url" name="twitter" id="twitter" placeholder="Twitter">       
-                        <br>
-                        <br>
-                    <label for="foto">Edita tu foto de perfil</label>
-                    <br>
-                    <br>    
-                    <img src="../image/logo.png" id="edi-imagen">
-                        <br>
-                        <br>
-                    <input type="file" name="imagen" id="foto-edi">    
-                        <br>
-                        <br>                        
-                    <a onclick="javascript:history.back()"><button id="Boton-can">Cancelar</button></a>
-                    <input type="submit" value="Guardar" id="Guardar">      
-                </form>               
-                                  
-                </section>
+                    <section id="datos1">
+                        <section id="carrera-form">
+                            <label class="in-t" for="carrera"> Carrera </label> &nbsp;  
+                            <select name="carrera" class="car" required>
+                                <option>TPSI</option>
+                                <option>TPQAPA</option>
+                                <option>TPEI</option>
+                                <option>TPMI</option>
+                                <option>TPMF</option>
+                                <option>TPP</option>
+                                <option>TPPQI</option>
+                                <option>BTDC</option>
+                                <option>BTQCM</option>
+                            </select> &nbsp; 
+                        </section>
+                        <section id="sem-form">
+                            <label class="in-t" for="grado"> Semestre </label> &nbsp; 
+                            <select name="semestre" required>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                            </select>
+                        </section>
+                    </section>
+                    <section id="datos2">
+                        <section id="sit-sent-form">
+                            <label class="in-t"> Situación sentimental </label> &nbsp; 
+                            <select name="situ_amor" id="Situacion" required>
+                                <option>Soltero(a)</option>
+                                <option>En una relación</option>
+                                <option>En una relación abierta</option>
+                                <option>Es complicado</option>
+                                <option>Casado(a)</option>
+                                <option>Viudo(a)</option>
+                            </select>
+                        </section>
+                    </section>
+                    <section id="datos3">
+                        <section id="musica-form">
+                            <label class="in-t"> Música </label> &nbsp; 
+                            <select name="musica" id="Musica" required>
+                                <option>Música clasica</option>
+                                <option>Rockerito</option>
+                                <option>Pop</option>
+                                <option>Kpop</option>
+                                <option>Banda (naco)</option>
+                                <option>Jazz</option>
+                                <option>Cumbia</option>
+                                <option>Bachata</option>
+                                <option>De todo un poquito</option>
+                            </select>
+                        </section>
+                        <section id="pasatiempo-form">
+                            <label class="in-t"> Pasatiempo favorito </label> &nbsp; 
+                            <select name="pasatiempo" id="pasa">
+                                <option>Dibujar</option>
+                                <option>Hacer ejercicio</option>
+                                <option>Tocar algún instrumento</option>
+                                <option> Leer </option>
+                                <option>Jugar videojuegos</option>
+                                <option>Cantar</option>
+                                <option>Tomar fotos</option>
+                            </select>
+                            <input type="text" name="otro" placeholder="OTRO" id="otro">
+                        </section>
+                        <section id="idk-form">
+                            <label class="in-t"> Pelicula o serie favorita</label>
+                            <input class="in" type="text" name="p_favorita" placeholder="Peli/serie favorita">
+                            <label class="in-t"> Apodo (opcional)</label>
+                            <input class="in" type="text" name="apodo" placeholder="Apodo">
+                            <label class="in-t"> Escribe algunos datos sobre ti</label>
+                            <input class="in" type="text" name="sobre_mi" placeholder="Datos sobre mi" id="sobre-ti" required>
+                            <label class="in-t" for="direccion">Municipio en donde vives</label> 
+                            <input class="in" type="text" name="municipio" name="dire" id="muni" placeholder="Municipio" required>
+                            <label class="in-t" for="rs"> Tu fecha de nacimiento</label>
+                            <input class="in" type="date" name="fecha_nac" required>
+                        </section>
+                        <section id="redes-sociales-form">
+                            <label id="tit-rs" for="Redes sociales:">Redes sociales:</label>
+                            <label class="in-t" for="Facebook">Ingresa el link de tu facebook (opcional)</label>
+                            <input class="in" type="url" name="facebook" id="facebook-form" placeholder="Facebook">
+                            <label class="in-t" for="Instagram">Ingresa el link de tu instagram (opcional)</label>
+                            <input class="in" type="url" name="instagram" id="instagram-form" placeholder="Instagram">
+                            <label class="in-t" for="Twitter">Ingresa el link de tu twitter (opcional)</label>
+                            <input class="in" type="url" name="twitter" id="twitter-form" placeholder="Twitter">
+                        </section>
+                    </section>
+                    <section id="datos4">
+                        <label for="foto">Edita tu foto de perfil</label>
+                        <input type="file" name="imagen" id="foto-edi">
+                    </section>
+                    <section id="datos5">
+                        <a onclick="javascript:history.back()" class="btn">Cancelar</a>
+                        <input type="submit" value="Guardar" id="btn-guardar" class="btn">
+                    </section>
+                </form>
             </section>
         </article>
     </main>
-    
     <footer>
         <article id="us">
             <section id="desc">
-                <section id="desc-tit">
+                <section class="subtitles">
                     <h4>QUIENES SOMOS</h4>
                 </section>
                 <section id="desc-p">
@@ -183,7 +163,7 @@
                 </section>
             </section>
             <section id="soporte">
-                <section id="sop-tit">
+                <section class="subtitles">
                     <h4>SOPORTE Y QUEJAS</h4>
                 </section>
                 <section id="sop-p">
@@ -191,16 +171,29 @@
                 </section>
             </section>
             <section id="contactos">
-                <section id="con-tit">
+                <section class="subtitles">
                     <h4>NOSOTROS</h4><br>
                 </section>
-                <section id="con-p">
-                    <script src="https://kit.fontawesome.com/0a85d6b6f4.js" crossorigin="anonymous"></script>
-                    <section id="social">
-                        <a href="https://www.facebook.com/profile.php?id=100087426652577"><i class="fa-brands fa-facebook"></i><p>Facebook</p></a><br>
-                        <a href="https://www.instagram.com/invites/contact/?i=lxq6eepq9ls7&utm_content=pv8zo7o"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a><br>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Whatsapp</p></a><br>
-                        <a href="https://twitter.com/polipostoficial?t=FVzRl3fwomEIG8aU8ulRNQ&s=08"><i class="fa-brands fa-twitter"></i><p>Twitter</p></a><br>
+                <section id="redes-sociales">
+                    <section class="sociales-f" id="facebook">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg>
+                        </a>
+                    </section>
+                    <section class="sociales-f" id="instagram">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg>
+                        </a>
+                    </section>
+                    <section class="sociales-f" id="whatsapp">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg>
+                        </a>
+                    </section>
+                    <section class="sociales-f" id="twitter">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg>
+                        </a>
                     </section>
                 </section>
             </section>
