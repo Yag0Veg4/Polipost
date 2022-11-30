@@ -466,9 +466,25 @@ label{
             width: 30px;
             height: 30px;
         }
-    
+        
     #glass {
         width: 80%;
+        margin: 50px auto;
+    }
+        .in-c {
+           width: 75px; 
+        }
+
+        .in {
+            width: 200px;
+        }
+            .in:focus {
+                width: 300px;
+            }
+    #us {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
 }
 
