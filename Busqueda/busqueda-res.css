@@ -147,60 +147,84 @@ body,html {
                     padding: 15px;
                 }
 
-    main {
-        width: 100%;
-        height: 60%;
+main {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-family: 'Sen';
+    z-index: 1;
+}
+    #resul {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
     }
-        #contenedor {
+    
+    #glass {
+        width: 50%;
+        display: block;
+        margin: 30px auto;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 25px;
+        color: white;
+        padding: 20px;
+        display: grid;
+    }
+        .user {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+            .img-user {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                transition: 0.2s all;
+            }
+                .img-user:hover {
+                    opacity: 0.7;
+                }
+
+            .nom-user {
+                color: #fff;
+                text-decoration: none;
+                font-size: 15px;
+                transition: 0.2s all;
+            }
+                .nom-user:hover {
+                    color: darkorange;
+                }
+        .foro {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-foro {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            margin: 150px auto;
         }
-            #formulario {
-                display: grid;
-                row-gap: 15px;
-                justify-content: center;
-            }   
-                #barra-bus {
-                    width: 500px;
-                    height: auto;
-                    padding: 5px;
-                    text-align: center;
-                    background-color: transparent;
-                    border: 1px solid darkorange;
-                    border-radius: 5px;
-                    color: #fff;
-                    transition: 0.2s all ease-in-out;
+            .btn {
+                text-align: center;
+                color: cyan;
+                text-decoration: none;
+                border: 1px solid cyan;
+                border-radius: 5px;
+                padding: 5px;
+                transition: 0.2s all;
+            }
+                .btn:hover {
+                    color: magenta;
+                    border: 1px solid magenta;
                 }
-                    #barra-bus::placeholder {
-                        font-family: 'Sen';
-                    }
 
-                    #barra-bus:focus {
-                        width: 900px;
-                        background-color: #202040;
-                    }
-                
-                #btn-bus {
-                    width: 100px;
-                    height: auto;
-                    padding: 5px;
-                    display: block;
-                    margin: auto;
-                    font-family: 'Sen';
-                    color: darkorange;
-                    border: 1px solid darkorange;
-                    border-radius: 5px;
-                    background-color: transparent;
-                    transition: 0.2s all ease-in-out;
-                }
-                    #btn-bus:hover {
-                        color: cyan;
-                        border: 1px solid cyan;
-                    }
-    
     footer {
         background-color: #202040;
         color: white;
