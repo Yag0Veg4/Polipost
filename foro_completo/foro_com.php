@@ -72,8 +72,8 @@
             <article class="inf-f">  
                 <section class="foro">
                     <section class="usu-f">
-                        <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" id="peimg2"></a>
-                        <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><?php echo $nombre ?> <?php echo $apellido ?></a>
+                        <a href="../Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" id="peimg2"></a>
+                        <a href="../Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><?php echo $nombre ?> <?php echo $apellido ?></a>
                     </section>
                     <section class="inf-foro">
                         <h3 class="nom-foro"><?php echo $titulo ?></h3>
@@ -125,8 +125,8 @@
                             <section class="tr-com">
                                 <section class="th-info-user">
                                     <section class="user">
-                                        <a href="../Perfil_otro_usuario/PERFIL_A.php"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-com"></a>
-                                        <a href="../Perfil_otro_usuario/PERFIL_A.php"><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
+                                        <a href="../Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-com"></a>
+                                        <a href="../Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>"><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
                                     </section>
                                 </section>
                                 <section>

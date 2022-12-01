@@ -30,7 +30,7 @@
                     </ul>
                 </section>
                 <section id="menu-perfil">
-                    <img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
+                    <img src="../general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="javascript:history.back()" id="RE">Regresar</a></li>
