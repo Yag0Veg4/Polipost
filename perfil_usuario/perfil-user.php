@@ -3,6 +3,11 @@
     session_start();
     require_once("../db/conexion.php");
 
+    if(!isset($_SESSION['id'])){
+        header("Location: /login/in-sesion.html");
+    }
+
+
     $id = $_SESSION['id'];
 
     $sql = "SELECT * FROM usuario WHERE id='$id'";

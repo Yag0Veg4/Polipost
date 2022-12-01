@@ -2,6 +2,11 @@
     session_start();
     require_once("../db/conexion.php");
 
+    if(!isset($_SESSION['id'])){
+        header("Location: /login/in-sesion.html");
+    }
+
+
     $id = $_SESSION['id'];
     $consulta = "SELECT * FROM post WHERE id_usuario='$id'";
     $res = $con->query($consulta);
