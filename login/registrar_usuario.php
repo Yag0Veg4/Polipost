@@ -15,7 +15,7 @@
     $consulta = "SELECT * FROM usuario WHERE codigo = '$codigo'";
     $res_con = mysqli_query($con, $consulta);
     if(mysqli_affected_rows($con) > 0){
-        header("Location: error.html");
+        header("Location: ../Alertas/alerta_codigo_existe.html");
     }else{
         if(mysqli_query($con, $insert)){
             header('location: in-sesion.html');
