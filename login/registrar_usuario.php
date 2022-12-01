@@ -12,16 +12,15 @@
 
     $insert = "INSERT INTO usuario (nombre, apellido, codigo, telefono, correo, password) VALUES ('$nombre', '$apellido', '$codigo', '$telefono', '$correo', '$pass_enc')";
 
-    //$consulta = "SELECT * FROM usuario WHERE codigo = '$codigo'";
-   // $res_con = mysqli_query($con, $consulta);
-   // if(mysqli_affected_rows($con) > 0){
-       // header("Location: ../Alertas/alerta_codigo_existe.html");
-   // }else{
-    $ren=mysqli_query($con, $insert)
-        if(!$ren){
-            echo mysqli_error($con);
+    $consulta = "SELECT * FROM usuario WHERE codigo = '$codigo'";
+    $res_con = mysqli_query($con, $consulta);
+    if(mysqli_affected_rows($con) > 0){
+        header("Location: ../Alertas/alerta_codigo_existe.html");
+    }else{
+        if(mysqli_query($con, $insert)){
+            header("Location: in-sesion.html");
         }else{
-            header('location: in-sesion.html');
+            echo mysqli_error($con);
         }
-   // }
+    }
 ?>
