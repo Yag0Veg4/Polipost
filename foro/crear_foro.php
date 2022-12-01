@@ -36,7 +36,7 @@
                             <li><a href="javascript:history.back()" id="RE">Regresar</a></li>
                             <li><a href="../foros_usuario/foros_usuario.php">Tus foros</a></li>                            
                             <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
-                            <li><a href="../login/logout.php">Sailr</a></li>
+                            <li><a href="../login/logout.php">Salir</a></li>
                         </ul>
                     </section>
                 </section>

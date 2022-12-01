@@ -60,9 +60,9 @@
                         <ul>
                             <li><a href="javascript:history.back()" id="RE">Regresar</a></li>
                             <li><a href="../foros_usuario/foros_usuario.php">Tus foros</a></li>
-                            <li><a href="../foro/crear_foro.html">Crea tu foro</a></li>
+                            <li><a href="../foro/crear_foro.php">Crea tu foro</a></li>
                             <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
-                            <li><a href="../login/logout.php">Sailr</a></li>
+                            <li><a href="../login/logout.php">Salir</a></li>
                         </ul>
                     </section>
                 </section>
@@ -125,8 +125,8 @@
                             <section class="tr-com">
                                 <section class="th-info-user">
                                     <section class="user">
-                                        <a href=""><img src="/general/img_usuario.php?id="<?php echo $id_usuario ?> class="img-com"></a>
-                                        <a href=""><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
+                                        <a href="../Perfil_otro_usuario/PERFIL_A.php"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-com"></a>
+                                        <a href="../Perfil_otro_usuario/PERFIL_A.php"><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
                                     </section>
                                 </section>
                                 <section>

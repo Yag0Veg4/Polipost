@@ -44,7 +44,7 @@
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="javascript:history.back()" id="RE">Regresar</a></li>                            
-                            <li><a href="../foro/crear_foro.html">Crea tu foro</a></li>
+                            <li><a href="../foro/crear_foro.php">Crea tu foro</a></li>
                             <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
                             <li><a href="../login/logout.php">Salir</a></li>
                         </ul>
@@ -93,7 +93,7 @@
                                     ?>
                                 </section>
                                 <section class="nav-foro">
-                                    <a class="btn-foro" href="../foro_completo/foro_com.php">Ir a foro</a>
+                                    <a class="btn-foro" href="/foro_completo/foro_com.php?id=<?php echo $id ?>">Ir a foro</a>
                                 </section>
                             </section>
                         </section>

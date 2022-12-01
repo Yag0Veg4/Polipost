@@ -58,9 +58,9 @@
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="../foros_usuario/foros_usuario.php">Tus foros</a></li>
-                            <li><a href="../foro/crear_foro.html">Crea tu foro</a></li>
+                            <li><a href="../foro/crear_foro.php">Crea tu foro</a></li>
                             <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
-                            <li><a href="../login/logout.php">Sailr</a></li>
+                            <li><a href="../login/logout.php">Salir</a></li>
                         </ul>
                     </section>
                 </section>
@@ -89,7 +89,7 @@
                             <section class="con-foro">
                                 <section class="dat-usu">
                                     <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="img-usuario"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
-                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id ?>" class="nom-usuario"> <?php echo $nombre.' '.$apellido ?></a>
+                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="nom-usuario"> <?php echo $nombre.' '.$apellido ?></a>
                                 </section>
                                 <section class="inf-foro">
                                     <p class="tit-foro"><?php echo $titulo ?></p>
