@@ -58,9 +58,11 @@
                     <a href="../perfil_usuario/perfil-user.php"><img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp"></a>
                     <section id="opciones-menu">
                         <ul>
-                            <li><a href="javascript:history.back()" id="Regresar">Regresar</a></li>
-                            <li><a href="../perfil_usuario/perfil-user.html">Pefil</a></li>
-                            <li><a href="../Polipost/login/logout.php">Sailr</a></li>
+                            <li><a href="javascript:history.back()" id="RE">Regresar</a></li>
+                            <li><a href="../foros_usuario/foros_usuario.php">Tus foros</a></li>
+                            <li><a href="../foro/crear_foro.html">Crea tu foro</a></li>
+                            <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
+                            <li><a href="../login/logout.php">Sailr</a></li>
                         </ul>
                     </section>
                 </section>
