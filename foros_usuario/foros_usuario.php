@@ -77,11 +77,11 @@
                             <section class="foro">
                                 <section class="dat-usu">
                                     <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="ami-user"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
-                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="nom-usu-f"><?php echo $nombre ?> <?php echo $apellido ?>Yago Vega</a>
+                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="nom-usu-f"><?php echo $nombre ?> <?php echo $apellido ?></a>
                                 </section>
                                 <section class="inf-foro">
                                     <p class="tit-foro-p"><?php echo $titulo ?></p>
-                                    <p class="fecha-f"><?php echo $fecha ?></p>
+                                    <p class="fecha-f"><?php echo $fecha ?></p> 
                                     <p class="contenido-f"><?php echo $contenido ?></p>
                                     <?php
                                         if($imagen != NULL){
