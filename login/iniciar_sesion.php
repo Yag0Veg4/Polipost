@@ -15,7 +15,7 @@
             $_SESSION['logged'] = "Si";
             $_SESSION['id'] = $row['id'];
             if((($row['carrera'] == '') || ($row['carrera'] == null)) || (($row['semestre'] == '') || ($row['semestre'] == null))){
-                header("Location: /editar_perfil/editar perfil.html");
+                header("Location: /editar_perfil/editar perfil.php");
             }else{
                 header("Location: ../index.php");
             }

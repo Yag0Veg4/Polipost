@@ -187,7 +187,7 @@
                         </section>
                     </section>
                     <section class="btn-act" id="ver-mas">
-                        <a href="../editar_perfil/editar perfil.html">Actualizar información</a>
+                        <a href="../editar_perfil/editar perfil.php">Actualizar información</a>
                     </section>
                 </section>
             </article>

@@ -49,7 +49,7 @@
                 <h1>EDITAR DATOS</h1>
             </section>
             <section id="formulario">
-                <form action="editar_perfil.php" method="post" enctype="multipart/form-data">
+                <form action="editar_perfil1.php" method="post" enctype="multipart/form-data">
                     <section id="datos1">
                         <section id="carrera-form">
                             <label class="in-t-c" for="carrera"> Carrera </label> &nbsp;  
