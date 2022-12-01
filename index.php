@@ -3,7 +3,7 @@
     session_start();
 
     if(!isset($_SESSION['id'])){
-        //header("Location: /login/in-sesion.html");
+        header("Location: /login/in-sesion.html");
     }
 
     $consulta = "SELECT * FROM post ORDER BY id DESC";
