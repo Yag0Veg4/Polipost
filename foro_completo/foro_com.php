@@ -55,7 +55,7 @@
                     </ul>
                 </section>
                 <section id="menu-perfil">
-                    <a href="../perfil_usuario/perfil-user.php"><img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="peimg"></a>
+                    <a href="../perfil_usuario/perfil-user.php"><img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp"></a>
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="javascript:history.back()" id="Regresar">Regresar</a></li>
@@ -123,7 +123,7 @@
                             <section class="tr-com">
                                 <section class="th-info-user">
                                     <section class="user">
-                                        <a href=""><img src="/general/img_usuario.php?id="<?php echo $id_usuario ?> id="img-com"></a>
+                                        <a href=""><img src="/general/img_usuario.php?id="<?php echo $id_usuario ?> class="img-com"></a>
                                         <a href=""><p><?php echo $nombre ?> <?php echo $apellido ?></p></a>
                                     </section>
                                 </section>

@@ -296,8 +296,8 @@ header {
                         object-fit: cover;
                         border: 2px solid #3F0071;
                         border-radius: 50%;
-                        width: 100px;
-                        height: 100px;
+                        width: 50px;
+                        height: 50px;
                         transition: 0.2s all ease-in-out;
                     }
                         .img-com:hover {

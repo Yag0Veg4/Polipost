@@ -245,6 +245,7 @@ header{
             }
 
             .fecha-foro {
+                text-align: center;
                 font-size: 13px;
                 padding: 10px 0;
             }

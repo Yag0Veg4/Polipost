@@ -58,7 +58,7 @@
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="../foros_usuario/foros_usuario.php">Tus foros</a></li>
-                            <li><a href="../foro/crear_foro.html">Crea tu foro</a></li>
+                            <li><a href="../Polipost/foro/crear_foro.html">Crea tu foro</a></li>
                             <li><a href="../perfil_usuario/perfil-user.php">Perfil</a></li>
                             <li><a href="../login/logout.php">Sailr</a></li>
                         </ul>
