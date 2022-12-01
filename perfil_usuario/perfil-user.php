@@ -60,15 +60,14 @@
                     <li><a href="../index.php">P</a></li>
                     <li><a href="../index.php">O</a></li>
                     <li><a href="../index.php">S</a></li>
-                    <li><a href="../index.php">T</a></li>
+                    <li><a href="../index.php">T</a></li>                    
                 </ul>
             </section>
-            <section class="nav">
+            <section class="nav">                                
                 <ul id="links">
-                    <li><a href="javascript:history.back()" id="RE">Regresar</a>
-                    </li>
-                    <li><a href="../login/logout.php" id="CE">Cerrar Sesion</a>
-                    </li>
+                    <li><a href="../index.php" id="RE">Ir al inicio</a></li>
+                    <li>o</li>
+                    <li><a href="../login/logout.php" id="CE">Cerrar Sesion</a></li>
                 </ul>
             </section>
         </nav>
