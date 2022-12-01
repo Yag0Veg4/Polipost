@@ -36,7 +36,7 @@
             <nav id="nav-bar">
                 <section id="logo">
                     <ul>
-                        <li id="img-logo"><a href=""><img src="../Polipost/image/logo.png" alt=""></a></li>
+                        <li id="img-logo"><a href=""><img src="../image/logo.png" alt=""></a></li>
                         <li>P</li>
                         <li>O</li>
                         <li>L</li>
