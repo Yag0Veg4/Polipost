@@ -18,7 +18,7 @@
         header("Location: error.html");
     }else{
         if(mysqli_query($con, $insert)){
-            header("Location: ../login/in-sesion.html");
+            header('location: in-sesion.html');
         }else{
             echo mysqli_error($con);
         }
