@@ -80,7 +80,7 @@
                                 </section>
                                 <section class="inf-foro">
                                     <p class="tit-foro-p"><?php echo $titulo ?></p>
-                                    <p class="fecha-f"><?php echo $fecha ?></p>
+                                    <p class="fecha-f"><?php echo $fecha ?></p> 
                                     <p class="contenido-f"><?php echo $contenido ?></p>
                                     <?php
                                         if($imagen != NULL){
