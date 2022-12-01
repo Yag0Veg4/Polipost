@@ -47,12 +47,6 @@
                         <li>T</li>
                     </ul>
                 </section>
-                <section id="barra-bus">
-                    <form method="post" action="">
-                        <input type="search" placeholder="A quien buscas?" class="bar-nav" id="busqueda" >
-                        <input type="submit" value="Buscar" class="btn-nav">
-                    </form>
-                </section>
                 <section id="menu-perfil">
                     <img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
                     <section id="opciones-menu">

@@ -18,7 +18,7 @@ header{
 
     #nav-bar {
         display: grid;
-        grid-template-columns: 40% 35% 25%;
+        grid-template-columns: 70% 30%;
     }
 
     #logo{
@@ -74,61 +74,6 @@ header{
                 #logo ul:hover li:nth-child(even) {
                     transform: skewY(-15deg);
                 }
-
-    #barra-bus{
-        float: left;
-        display: flex;
-        align-items: center;
-    }
-        form {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-        }
-
-        #busqueda{
-            width: 450px;
-            height: 25px;
-            border: .5px solid cyan;
-            background-color: transparent;
-            color: #fff;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: 'Lato';
-            display: block;
-            margin: auto;  
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            text-align: center;
-            transition: 0.2s all ease-in-out;
-        }
-            #busqueda::placeholder {
-                color: #fff;
-                font-family: 'Sen';
-            }
-        
-            #busqueda:focus {
-                width: 480px;
-            }
-
-        .btn-nav {
-            width: 60px;
-            height: 25px;
-            border: .2px solid cyan;
-            border-radius: 8px;
-            background-color: transparent;
-            color: #fff;
-            font-size: 14px;
-            font-family: 'Sen';
-            transition: .2s all ease-in-out;
-        }
-            .btn-nav:hover {
-                cursor: pointer;
-                color: darkorange;
-                border: .2px solid darkorange;
-            }
 
     #menu-perfil {
         display: flex;
