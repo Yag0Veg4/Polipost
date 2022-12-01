@@ -20,10 +20,10 @@
                 header("Location: ../index.php");
             }
         }else{
-            echo "NO LOGIN";
+            header("Location: ../Alertas/Pass_inc.html");
         }
     }else{
-        echo "ESE CODIGO NO ESTA REGISTRADO";
+        header("Location: ../Alertas/User_no_e.html");
     }
 
     
