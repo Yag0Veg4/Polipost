@@ -89,7 +89,7 @@
                             <section class="con-foro">
                                 <section class="dat-usu">
                                     <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id_usuario ?>" class="img-usuario"><img src="/general/img_usuario.php?id=<?php echo $id_usuario ?>" class="img-fo"></a>
-                                    <a href="/foro_completo/foro_com.php?id=<?php echo $id ?>" class="nom-usuario"> <?php echo $nombre.' '.$apellido ?></a>
+                                    <a href="/Perfil_otro_usuario/PERFIL_A.php?id=<?php echo $id ?>" class="nom-usuario"> <?php echo $nombre.' '.$apellido ?></a>
                                 </section>
                                 <section class="inf-foro">
                                     <p class="tit-foro"><?php echo $titulo ?></p>
