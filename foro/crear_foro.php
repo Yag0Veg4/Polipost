@@ -1,3 +1,14 @@
+<?php
+    require_once("db/conexion.php");
+    session_start();
+
+    if(!isset($_SESSION['id'])){
+        header("Location: /login/in-sesion.html");
+    }
+
+?>
+
+
 <!DOCTYPE html>     
 <html>
     <head>
@@ -30,7 +41,7 @@
                     </ul>
                 </section>
                 <section id="menu-perfil">
-                    <img src="../general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
+                    <img src="/general/img_usuario.php?id=<?php echo $_SESSION['id'] ?>" id="imp">
                     <section id="opciones-menu">
                         <ul>
                             <li><a href="javascript:history.back()" id="RE">Regresar</a></li>
