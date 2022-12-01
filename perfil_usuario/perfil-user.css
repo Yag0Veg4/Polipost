@@ -135,7 +135,9 @@ body {
                     width: 275px;
                     height: 275px;
                     border-radius: 50%;
-                    border: 3px solid #202040;
+                    border: 3px solid #202040;                    
+                    object-fit: cover;
+                    
                 }
 
             #info-y-redes {
