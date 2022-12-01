@@ -71,17 +71,18 @@ html, body{
                         #logo ul:hover li:nth-child(even) {
                             transform: skewY(-15deg);
                         }
-                        #menu-perfil {
-                            display: flex;
-                            justify-content: end;
-                            align-items: center;
-                            padding: 15px;
-                            position: relative;
-                        }
-            #menu-perfil a {
-                color: #fff;
-                text-decoration: none;
+
+            #menu-perfil {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 15px;
+                position: relative;
             }
+                #menu-perfil a {
+                    color: #fff;
+                    text-decoration: none;
+                }
 
             #opciones-menu {
                 display: none;
@@ -152,10 +153,15 @@ html, body{
 
             .dat-usu {
                 padding: 15px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
             }
                 .img-fo {
-                    width: 100px;
-                    height: 100px;
+                    width: 50px;
+                    height: 50px;
                     object-fit: cover;
                     border-radius: 50%;
                     border: 2px solid darkgoldenrod;
@@ -167,6 +173,35 @@ html, body{
 
                 .nom-usu-f {
                     font-size: 16px;
+                    color: #fff;
+                    transition: 0.2s all;
+                }
+                    .nom-usu-f:hover {
+                        color: darkorange;
+                    }
+
+            .inf-foro {
+                row-gap: 10px;
+            }
+                .tit-foro-p {
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 20px;
+                }
+
+                .fecha-f {
+                    text-align: center;
+                    font-size: 13px;
+                    color: #696969;
+                }
+
+                .contenido-f {
+                    text-align: center;
+                }
+                
+                .img-foro-in {
+                    width: 100px;
+                    height: auto;
                 }
 
             .nav-foro {
@@ -180,11 +215,15 @@ html, body{
             }
 
                 .btn-foro {
-                    color: #fff;
+                    width: 75px;
+                    text-align: center;
+                    color: cyan;
                     border: 1px solid cyan;
                     padding: 10px;
                     font-size: 15px;
                     border-radius: 5px;
+                    display: block;
+                    margin: 10px auto;
                     transition: 0.2s all ease-in-out;
                 }
                     .btn-foro:hover {
