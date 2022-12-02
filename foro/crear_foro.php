@@ -71,7 +71,7 @@
                         <input type="file" name="imagen" id="select-foto">
                     </section>
                     <section class="btns">
-                        <a href="../index.php"><input type="submit" name="Cancelar" class="btn" value="Cancelar"></a>
+                        <a onclick="javascript:history.back()" class="btn ac">Cancelar</a>
                         <input type="submit" name="Publicar" class="btn" value="Publicar">
                     </section>
                 </form>

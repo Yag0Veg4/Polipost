@@ -283,6 +283,7 @@ body {
                 border: none;
                 font-family: 'Sen';
                 box-shadow: 0 5px 5px 5px rgba(0, 0, 0, .09);
+                cursor: pointer;
             }
                 .btn:hover {
                     background-position: right center;
@@ -290,6 +291,9 @@ body {
                     text-decoration: none;
                 }
 
+            .ac{               
+               font-size: 13px;
+            }        
     footer {
         background-color: #202040;
         color: white;

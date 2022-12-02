@@ -120,7 +120,7 @@
                         </section>
                         <section id="pasatiempo-form">
                             <label class="in-t-c"> Pasatiempo favorito </label> &nbsp; 
-                            <select name="pasatiempo" id="pasa" class="in-c">
+                            <select name="pasatiempo" id="pasa" class="in-c" require>
                                 <option>Dibujar</option>
                                 <option>Hacer ejercicio</option>
                                 <option>Tocar algún instrumento</option>
@@ -133,7 +133,7 @@
                         </section>
                         <section id="idk-form">
                             <label class="in-t"> Pelicula o serie favorita</label>
-                            <input class="in" type="text" name="p_favorita" placeholder="Peli/serie favorita">
+                            <input class="in" type="text" name="p_favorita" placeholder="Peli/serie favorita" require>
                             <label class="in-t"> Apodo (opcional)</label>
                             <input class="in" type="text" name="apodo" placeholder="Apodo">
                             <label class="in-t"> Escribe algunos datos sobre ti</label>
@@ -154,7 +154,7 @@
                         </section>
                     </section>
                     <section id="datos4">
-                        <label for="foto">Edita tu foto de perfil</label>
+                        <label for="foto">Edita tu foto de perfil (opcional)</label>
                         <input type="file" name="imagen" id="foto-edi">
                     </section>
                     <section id="datos5">
