@@ -244,6 +244,7 @@ body,html {
                 .in {
                     width: 400px;
                     transition: 0.4s all ease-in-out;
+                    color: #fff;
                 }
                     .in:focus {
                         width: 500px;

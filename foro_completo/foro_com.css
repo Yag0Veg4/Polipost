@@ -147,7 +147,7 @@ header {
         }
 
     .foro {
-        width: 80%;
+        width: 75%;
         height: auto;
         margin: 60px auto;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -191,6 +191,7 @@ header {
                     color: darkorange;
                     cursor: pointer;
                 }
+
     .inf-foro {
         padding: 30px;
     }
