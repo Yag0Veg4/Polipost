@@ -126,10 +126,10 @@ html, body{
             }   
 
     .glass {
-        width: 80%;
+        width: 75%;
         height: auto;
         display: block;
-        margin: 40px auto;
+        margin: 60px auto;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
@@ -306,11 +306,6 @@ html, body{
                     #instagram {
                         background: rgb(89,14,173);
                         background: linear-gradient(343deg, rgba(89,14,173,1) 10%, rgba(255,57,57,1) 100%); 
-                    }
-
-                    #whatsapp {
-                        background: rgb(19,110,0);
-                        background: linear-gradient(143deg, rgba(19,110,0,1) 0%, rgba(103,255,151,1) 100%); 
                     }
 
                     #twitter {

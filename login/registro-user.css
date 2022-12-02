@@ -242,11 +242,6 @@ body {
                         background: linear-gradient(343deg, rgba(89,14,173,1) 10%, rgba(255,57,57,1) 100%); 
                     }
     
-                    #whatsapp {
-                        background: rgb(19,110,0);
-                        background: linear-gradient(143deg, rgba(19,110,0,1) 0%, rgba(103,255,151,1) 100%); 
-                    }
-    
                     #twitter {
                         background: rgb(2,51,181);
                         background: linear-gradient(143deg, rgba(2,51,181,1) 0%, rgba(16,255,248,1) 100%); 
